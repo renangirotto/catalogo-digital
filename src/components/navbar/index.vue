@@ -22,12 +22,11 @@
 </template>
 
 <script>
-
-import Nav from './nav'
+import Nav from "./nav";
 
 export default {
     components: {
-        'navbar-nav': Nav
+        "navbar-nav": Nav,
     },
     data: function () {
         return {
@@ -67,22 +66,42 @@ export default {
 </script>
 
 <style lang="scss">
-
 .navbar {
     position: relative;
-    
+
     @include element(top) {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        padding-right: 16px;
+        padding-bottom: 16px;
         border-bottom: 1px solid $grey-2;
 
+        @media #{$mq-md} {
+            box-sizing: border-box;
+            flex-direction: row;
+            padding-bottom: 0px;
+            height: $navbarTopHeight;
+        }
+
         @include element(logo) {
+            box-sizing: border-box;
+            width: 100%;
+            height: 60px;
             padding: 20px;
+            text-align: center;
             background-color: $brand;
 
+            @media #{$mq-md} {
+                width: auto;
+            }
+
             &:not(:last-child) {
-                margin-right: 16px;
+                margin-bottom: 16px;
+
+                @media #{$mq-md} {
+                    margin-right: 16px;
+                    margin-bottom: 0px;
+                }
             }
 
             img {
@@ -92,6 +111,7 @@ export default {
 
         @include element(title) {
             font-size: 22px;
+            padding: 8px 0;
         }
 
         @include element(select) {
@@ -114,14 +134,27 @@ export default {
             padding: 8px;
             border: none;
             border-radius: 4px;
+            position: absolute;
+            top: 8px;
+            right: 8px;
             margin-left: auto;
-            color: $text-grey;
+            color: $text-white;
             background-color: transparent;
             cursor: pointer;
             transition: background-color 0.5s ease;
 
+            @media #{$mq-md} {
+                position: static;
+                margin-right: 16px;
+                color: $text-grey;
+            }
+
             &:hover {
-                background-color: $grey-3;
+                background-color: darken($color: $brand, $amount: 5);
+
+                @media #{$mq-md} {
+                    background-color: $grey-3;
+                }
             }
         }
     }

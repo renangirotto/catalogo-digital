@@ -104,6 +104,7 @@ export default {
     position: absolute;
     top: calc(100% + 16px);
     left: 16px;
+    z-index: $z-index-2;
 
     @include element(trigger) {
         min-width: 56px;
@@ -113,7 +114,7 @@ export default {
         border: 0;
         border-radius: 50%;
         color: $white;
-        background-color: #cb3b3b;
+        background-color: $brand;
         -webkit-box-shadow: 0px 2px 5px 0px rgba(68, 68, 68, 0.3);
         -moz-box-shadow: 0px 2px 5px 0px rgba(68, 68, 68, 0.3);
         box-shadow: 0px 2px 5px 0px rgba(68, 68, 68, 0.3);
@@ -128,13 +129,13 @@ export default {
 
         @include element(item) {
             padding: 8px 12px;
-            border: 1px solid #cb3b3b;
+            border: 1px solid $brand;
             border-radius: 4px;
             position: relative;
             left: 0px;
             font-size: 20px;
             color: $white;
-            background-color: #cb3b3b;
+            background-color: $brand;
             -webkit-box-shadow: 0px 1px 1px 0px rgba(68, 68, 68, 0.15);
             -moz-box-shadow: 0px 1px 1px 0px rgba(68, 68, 68, 0.15);
             box-shadow: 0px 1px 1px 0px rgba(68, 68, 68, 0.15);
@@ -152,7 +153,7 @@ export default {
             @include modifier(all) {
                 @extend .nav__list__item;
                 border: 1px solid $grey-2;
-                color: #cb3b3b;
+                color: $brand;
                 background-color: $white;
             }
         }
@@ -165,7 +166,7 @@ export default {
 .fade-leave-active {
     transition: left 1s, opacity 0.25s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active em versões anteriores a 2.1.8 */ {
+.fade-enter, .fade-leave-to {
     opacity: 0;
     left: -8px;
 }

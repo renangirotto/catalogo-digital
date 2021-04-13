@@ -11,7 +11,10 @@ import {
     faMapMarkerAlt,
     faBuilding,
     faRulerCombined,
-    faAngleDown
+    faAngleDown,
+    faAngleUp,
+    faAngleLeft,
+    faAngleRight
 } from '@fortawesome/free-solid-svg-icons'
 
 //Add imported icons to the project library
@@ -25,7 +28,10 @@ library.add(
     faMapMarkerAlt,
     faBuilding,
     faRulerCombined,
-    faAngleDown
+    faAngleDown,
+    faAngleUp,
+    faAngleLeft,
+    faAngleRight
 )
 
 //Add fontawesome gloably in the components

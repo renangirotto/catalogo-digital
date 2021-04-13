@@ -5,7 +5,7 @@
             <font-awesome-icon v-if="this.trigger" icon="times" size="2x" />
         </button>
         <transition-group name="fade" tag="ul" class="nav__list">
-            <li
+            <router-link :to="item.route" tag="li"
                 v-for="(item, index) in menu"
                 :key="item.name"
                 :class="
@@ -19,7 +19,7 @@
                     <font-awesome-icon :icon="item.icon" />
                 </span>
                 {{ item.name }}
-            </li>
+            </router-link>
         </transition-group>
     </nav>
 </template>
@@ -76,7 +76,7 @@ export default {
                 {
                     name: "Outros empreendimentos",
                     icon: "building",
-                    route: "",
+                    route: "/",
                     active: false,
                 },
             ],

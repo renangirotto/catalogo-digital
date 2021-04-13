@@ -17,7 +17,7 @@
                 <font-awesome-icon icon="expand" size="2x" />
             </button>
         </div>
-        <navbar-nav />
+        <navbar-nav v-if="this.$route.name != 'Home'"  />
     </div>
 </template>
 
@@ -37,6 +37,8 @@ export default {
         toggleFullscreen: function () {
             //Get document html
             const elem = document.documentElement;
+
+            console.log(this.$route.name)
 
             //Check if the element is of fullscreen
             if (!document.fullscreenElement) {
@@ -68,6 +70,7 @@ export default {
 <style lang="scss">
 .navbar {
     position: relative;
+    z-index: $z-index-3;
 
     @include element(top) {
         display: flex;
@@ -75,6 +78,7 @@ export default {
         align-items: center;
         padding-bottom: 16px;
         border-bottom: 1px solid $grey-2;
+        background-color: $white;
 
         @media #{$mq-md} {
             box-sizing: border-box;

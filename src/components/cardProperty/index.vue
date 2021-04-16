@@ -1,33 +1,29 @@
 <template>
-    <router-link :to="`/imovel/${handleRoute(name)}`" tag="div" class="cardPropertie">
+    <router-link :to="`/imovel/${url}`" tag="div" class="cardProperty">
         <div
-            class="cardPropertie__content"
+            class="cardProperty__content"
             :style="{
-                backgroundImage: `url(${require(`./../../assets/images/properties/${imageUrl}`)})`,
+                backgroundImage: `url(${require(`./../../assets/images/properties/${imageUrl}/thumb.jpg`)})`,
             }"
         >
-            <h3 class="cardPropertie__content__name">{{ name }}</h3>
+            <h3 class="cardProperty__content__name">{{ name }}</h3>
         </div>
     </router-link>
 </template>
 
 <script>
 export default {
-    name: "CardPropertie",
+    name: "cardProperty",
     props: {
         imageUrl: String,
         name: String,
+        url: String,
     },
-    methods: {
-        handleRoute: function(name) {
-            return name.toLowerCase().replace(" ", '-')
-        }
-    }
 };
 </script>
 
 <style lang="scss">
-.cardPropertie {
+.cardProperty {
     @media #{$mq-sm} {
         margin: 0 8px;
     }

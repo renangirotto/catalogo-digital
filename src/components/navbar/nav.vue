@@ -5,8 +5,11 @@
             <font-awesome-icon v-if="this.trigger" icon="times" size="2x" />
         </button>
         <transition-group name="fade" tag="ul" class="nav__list">
-            <router-link :to="item.route" tag="li"
+            <router-link
+                :to="item.route"
+                tag="li"
                 v-for="(item, index) in menu"
+                @click.native="toggleNav"
                 :key="item.name"
                 :class="
                     index == menu.length - 1
@@ -70,7 +73,7 @@ export default {
                 {
                     name: "Mapa",
                     icon: "map-marker-alt",
-                    route: "",
+                    route: `/imovel/${this.$route.params.propertyName}/mapa`,
                     active: false,
                 },
                 {
@@ -81,6 +84,15 @@ export default {
                 },
             ],
         };
+    },
+    watch: {
+        $route() {
+            this.menu.map(element => {
+                if (element.name == "Mapa") {
+                    element.route = `/imovel/${this.$route.params.propertyName}/mapa`
+                }
+            })
+        },
     },
     methods: {
         toggleNav: function () {
@@ -105,6 +117,11 @@ export default {
     top: calc(100% + 16px);
     left: 16px;
     z-index: $z-index-2;
+
+    @media #{$mq-md} {
+        top: calc(100% + 32px);
+        left: 32px;
+    }
 
     @include element(trigger) {
         min-width: 56px;
@@ -166,7 +183,8 @@ export default {
 .fade-leave-active {
     transition: left 1s, opacity 0.25s;
 }
-.fade-enter, .fade-leave-to {
+.fade-enter,
+.fade-leave-to {
     opacity: 0;
     left: -8px;
 }

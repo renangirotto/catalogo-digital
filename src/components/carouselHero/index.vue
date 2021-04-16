@@ -8,10 +8,10 @@
         <figure
             v-for="image in dataImages"
             v-show="image.active"
-            :key="image.url"
+            :key="image.name"
             class="carouselHero__item"
         >
-            <img :src="require(`@/assets/images/${image.url}`)" alt="" />
+            <img :src="require(`@/assets/images/home/${image.name}`)" alt="" />
         </figure>
     </transition-group>
 </template>
@@ -36,7 +36,7 @@ export default {
         //Push prop itens into data array to create slide
         this.images.map((element, index) => {
             this.dataImages.push({
-                url: element,
+                name: element,
                 active: index == 0 ? true : false,
                 zLvl: index == 0 ? 1 : 0,
             });

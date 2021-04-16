@@ -24,5 +24,16 @@ export default {
         max-height: 100vh;
         overflow: hidden;
     }
+
+    section {
+        &.fullscreen {
+            width: 100%;
+            min-height: 100vh;
+
+            @media #{$mq-md} {
+                height: calc(100vh - #{$navbarTopHeight});
+            }
+        }
+    }
 }
 </style>

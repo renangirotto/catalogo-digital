@@ -1,23 +1,21 @@
 <template>
     <div class="navbar">
         <div class="navbar__top">
-            <figure class="navbar__top__logo">
+            <router-link to="/" tag="figure" class="navbar__top__logo">
                 <img
                     :src="require('@/assets/images/company/logo-company.svg')"
                     :alt="companyName"
                 />
-            </figure>
-            <h1 class="navbar__top__title">Catálogo Digital</h1>
-            <!-- <select class="navbar__top__select">
-        <option value="">Empreendimento 1</option>
-        <option value="">Empreendimento 2</option>
-        <option value="">Empreendimento 3</option>
-      </select> -->
+            </router-link>
+            <h1 v-if="this.$route.name == 'Home'" class="navbar__top__title">Catálogo Digital</h1>
+            <select v-else v-model="selectedProperty" class="navbar__top__select">
+                <option v-for="property in properties" :key="property.name" :value="property.url">{{property.name}}</option>
+            </select>
             <button class="navbar__top__expand" @click="toggleFullscreen">
                 <font-awesome-icon icon="expand" size="2x" />
             </button>
         </div>
-        <navbar-nav v-if="this.$route.name != 'Home'"  />
+        <navbar-nav v-if="this.$route.name != 'Home'" />
     </div>
 </template>
 
@@ -31,14 +29,27 @@ export default {
     data: function () {
         return {
             companyName: "Construtora Patriani",
+            properties: this.$store.state.properties,
+            selectedProperty: this.$route.params.propertyName //bind with the properties select
         };
+    },
+    watch: {
+        selectedProperty: function(val) {
+            //Check if the next route is diferente from now
+            if (val != this.$route.params.propertyName) {
+                this.$router.push(`/imovel/${val}`)
+            }
+        },
+        '$route.params.propertyName': function(val) {
+            this.selectedProperty = val
+        }
     },
     methods: {
         toggleFullscreen: function () {
             //Get document html
             const elem = document.documentElement;
 
-            console.log(this.$route.name)
+            console.log(this.$route.name);
 
             //Check if the element is of fullscreen
             if (!document.fullscreenElement) {
@@ -94,6 +105,7 @@ export default {
             padding: 20px;
             text-align: center;
             background-color: $brand;
+            cursor: pointer;
 
             @media #{$mq-md} {
                 width: auto;
@@ -132,6 +144,7 @@ export default {
             background-position: right;
             background-size: 12px;
             background-repeat: no-repeat;
+            cursor: pointer;
         }
 
         @include element(expand) {

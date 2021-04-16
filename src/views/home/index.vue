@@ -11,7 +11,7 @@
                 </div>
             </section>
         </transition>
-        <section class="viewHome__properties">
+        <section class="viewHome__properties fullscreen">
             <button @click="toggleHero" class="viewHome__properties__anchor">
                 <span class="viewHome__properties__anchor__icon"
                     ><font-awesome-icon icon="angle-up"
@@ -28,16 +28,18 @@
                         <font-awesome-icon icon="angle-left" />
                     </button>
                     <vue-slick-carousel
+                        v-if="properties.length"
                         ref="carouselProperties"
                         v-bind="carouselSettings"
                     >
                         <div
-                            v-for="propertie in properties"
-                            :key="propertie.name"
+                            v-for="property in properties"
+                            :key="property.name"
                         >
-                            <card-propertie
-                                :name="propertie.name"
-                                :imageUrl="propertie.imageUrl"
+                            <card-property
+                                :name="property.name"
+                                :imageUrl="property.imageUrl"
+                                :url="property.url"
                             />
                         </div>
                     </vue-slick-carousel>
@@ -52,29 +54,26 @@
 
 <script>
 import CarouselHero from "@/components/carouselHero";
-import CardPropertie from "@/components/cardPropertie";
+import CardProperty from "@/components/cardProperty";
 
 export default {
     name: "ViewHome",
     components: {
         CarouselHero,
-        CardPropertie,
+        CardProperty,
     },
     data: function () {
         return {
             activeHero: true,
-            hero: [
-                "infos-02-Portaria.jpg",
-                "infos-03-Hall.jpg",
-                "lazer-01-piscina.jpg",
-            ],
+            hero: this.$store.state.homeSlide,
+            properties: this.$store.state.properties,
             carouselSettings: {
                 dots: true,
                 arrows: false,
                 infinite: true,
                 speed: 500,
                 slidesToShow: 5,
-                slidesToScroll: 5,
+                slidesToScroll: 1,
                 responsive: [
                     {
                         breakpoint: 1599,
@@ -106,40 +105,6 @@ export default {
                     },
                 ],
             },
-            properties: [
-                {
-                    name: "Imóvel 01",
-                    imageUrl: "propertie-1.jpg",
-                },
-                {
-                    name: "Imóvel 02",
-                    imageUrl: "propertie-1.jpg",
-                },
-                {
-                    name: "Imóvel 03",
-                    imageUrl: "propertie-1.jpg",
-                },
-                {
-                    name: "Imóvel 04",
-                    imageUrl: "propertie-1.jpg",
-                },
-                {
-                    name: "Imóvel 05",
-                    imageUrl: "propertie-1.jpg",
-                },
-                {
-                    name: "Imóvel 06",
-                    imageUrl: "propertie-1.jpg",
-                },
-                {
-                    name: "Imóvel 07",
-                    imageUrl: "propertie-1.jpg",
-                },
-                {
-                    name: "Imóvel 08",
-                    imageUrl: "propertie-1.jpg",
-                },
-            ],
         };
     },
     methods: {
@@ -201,7 +166,6 @@ export default {
 
         @media #{$mq-md} {
             padding: 16px;
-            height: calc(100vh - 60px);
         }
 
         @include element(anchor) {
@@ -258,7 +222,12 @@ export default {
         }
 
         @include element(container) {
+            width: 100%;
             max-width: 80vw;
+
+            @media #{$mq-xxl} {
+                max-width: 1476px;
+            }
         }
 
         @include element(title) {
@@ -286,6 +255,7 @@ export default {
         }
 
         @include element(carousel) {
+            width: 100%;
             position: relative;
 
             .arrow {
@@ -299,7 +269,7 @@ export default {
                 position: absolute;
                 top: 50%;
                 z-index: $z-index-1;
-                margin-top: -64px;
+                margin-top: -28px;
                 font-size: 24px;
                 color: $white;
                 background-color: $brand;
@@ -322,8 +292,7 @@ export default {
             }
 
             .slick-dots {
-                position: static;
-                margin-top: 24px;
+                bottom: -36px;
 
                 li {
                     display: inline-flex;

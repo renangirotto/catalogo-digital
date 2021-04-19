@@ -19,8 +19,8 @@
                 <span class="viewHome__properties__anchor__text">Voltar</span>
             </button>
             <div class="viewHome__properties__container">
-                <h2 class="viewHome__properties__title">Nossos imóveis</h2>
-                <p class="viewHome__properties__text">
+                <h2 class="sectionTitle">Nossos imóveis</h2>
+                <p class="sectionText">
                     Escolha e navegue por nossas galerias!
                 </p>
                 <div class="viewHome__properties__carousel">
@@ -190,9 +190,8 @@ export default {
                 height: auto;
                 padding: 8px 12px;
                 border-radius: 4px;
-                position: static;
-                margin-right: auto;
-                margin-left: 24px;
+                top: 32px;
+                left: 32px;
                 color: $brand;
                 background-color: $white;
             }

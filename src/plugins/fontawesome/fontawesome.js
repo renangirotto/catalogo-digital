@@ -14,7 +14,8 @@ import {
     faAngleDown,
     faAngleUp,
     faAngleLeft,
-    faAngleRight
+    faAngleRight,
+    faHome
 } from '@fortawesome/free-solid-svg-icons'
 
 //Add imported icons to the project library
@@ -31,7 +32,8 @@ library.add(
     faAngleDown,
     faAngleUp,
     faAngleLeft,
-    faAngleRight
+    faAngleRight,
+    faHome
 )
 
 //Add fontawesome gloably in the components

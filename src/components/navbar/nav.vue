@@ -6,7 +6,7 @@
         </button>
         <transition-group name="fade" tag="ul" class="nav__list">
             <router-link
-                :to="item.route"
+                :to="index == menu.length - 1 ? `/` :`/imovel/${$route.params.propertyName}/${item.route}`"
                 tag="li"
                 v-for="(item, index) in menu"
                 @click.native="toggleNav"
@@ -35,64 +35,61 @@ export default {
             trigger: false,
             menu: [
                 {
+                    name: "Início",
+                    icon: "home",
+                    route: "",
+                    active: false,
+                },
+                {
                     name: "Infos",
                     icon: "images",
-                    route: "",
+                    route: "infos",
                     active: false,
                 },
                 {
                     name: "Área de Lazer",
                     icon: "images",
-                    route: "",
+                    route: "lazer",
                     active: false,
                 },
                 {
                     name: "Decorado",
                     icon: "images",
-                    route: "",
+                    route: "decorado",
                     active: false,
                 },
                 {
                     name: "Plantas",
                     icon: "ruler-combined",
-                    route: "",
+                    route: "plantas",
                     active: false,
                 },
                 {
                     name: "Vídeos",
                     icon: "play-circle",
-                    route: "",
+                    route: "video",
                     active: false,
                 },
                 {
                     name: "Modelo 3D",
                     icon: "cubes",
-                    route: "",
+                    route: "modelo-3d",
                     active: false,
                 },
                 {
                     name: "Mapa",
                     icon: "map-marker-alt",
-                    route: `/imovel/${this.$route.params.propertyName}/mapa`,
+                    route: `mapa`,
                     active: false,
                 },
                 {
                     name: "Outros empreendimentos",
                     icon: "building",
-                    route: "/",
+                    route: "",
                     active: false,
                 },
             ],
         };
-    },
-    watch: {
-        $route() {
-            this.menu.map(element => {
-                if (element.name == "Mapa") {
-                    element.route = `/imovel/${this.$route.params.propertyName}/mapa`
-                }
-            })
-        },
     },
     methods: {
         toggleNav: function () {

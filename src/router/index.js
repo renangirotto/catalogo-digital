@@ -6,6 +6,12 @@ import Home from '@/views/home'
 //--Property Views--
 import PropertyIndex from '@/views/property'
 import PropertyHome from '@/views/property/propertyHome'
+import PropertyInfos from '@/views/property/propertyInfos'
+import PropertyLazer from '@/views/property/propertyLazer'
+import PropertyDecorado from '@/views/property/propertyDecorado'
+import PropertyPlantas from '@/views/property/propertyPlantas'
+import PropertyVideo from '@/views/property/propertyVideo'
+import PropertyModel from '@/views/property/propertyModel'
 import PropertyMap from '@/views/property/propertyMap'
 
 Vue.use(Router)
@@ -27,6 +33,36 @@ export default new Router({
                     path: '',
                     name: 'PropertyHome',
                     component: PropertyHome
+                },
+                {
+                    path: 'infos',
+                    name: 'PropertyInfo',
+                    component: PropertyInfos
+                },
+                {
+                    path: 'lazer',
+                    name: 'PropertyLazer',
+                    component: PropertyLazer
+                },
+                {
+                    path: 'decorado',
+                    name: 'PropertyDecorado',
+                    component: PropertyDecorado
+                },
+                {
+                    path: 'plantas',
+                    name: 'PropertyPlantas',
+                    component: PropertyPlantas
+                },
+                {
+                    path: 'video',
+                    name: 'PropertyVideo',
+                    component: PropertyVideo
+                },
+                {
+                    path: 'modelo-3d',
+                    name: 'PropertyModel',
+                    component: PropertyModel
                 },
                 {
                     path: 'mapa',

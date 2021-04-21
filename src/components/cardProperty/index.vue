@@ -1,11 +1,12 @@
 <template>
     <router-link :to="`/imovel/${url}`" tag="div" class="cardProperty">
-        <div
-            class="cardProperty__content"
-            :style="{
-                backgroundImage: `url(${require(`./../../assets/images/properties/${imageUrl}/thumb.jpg`)})`,
-            }"
-        >
+        <div class="cardProperty__content">
+            <div
+                class="cardProperty__content__thumb"
+                :style="{
+                    backgroundImage: `url(${require(`./../../assets/images/properties/${imageUrl}/thumb.jpg`)})`,
+                }"
+            ></div>
             <h3 class="cardProperty__content__name">{{ name }}</h3>
         </div>
     </router-link>
@@ -36,10 +37,8 @@ export default {
         max-height: 440px;
         border: 2px solid $grey-3;
         border-radius: 8px;
+        position: relative;
         margin: 0 auto;
-        background-size: 100% 100%;
-        background-position: center;
-        background-repeat: no-repeat;
         cursor: pointer;
         overflow: hidden;
         transition: border-color 0.5s ease-in-out, background-size 1s ease;
@@ -50,10 +49,26 @@ export default {
 
         &:hover {
             border-color: $brand;
-            background-size: 105% 105%;
+            
+            .cardProperty__content__thumb {
+                transform: scale(1.1);
+            }
+        }
+
+        @include element(thumb) {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: transform 0.5s;
         }
 
         @include element(name) {
+            position: relative;
             width: 100%;
             padding: 12px 16px;
             font-weight: 400;

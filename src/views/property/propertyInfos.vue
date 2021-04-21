@@ -5,18 +5,18 @@
             <p class="sectionText">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
-            <carousel-gallery type="infos" :images="property.infos" />
+            <gallery :items="property.infos" target="infos" />
         </section>
     </div>
 </template>
 
 <script>
-import CarouselGallery from "@/components/carouselGallery";
+import Gallery from "@/components/gallery";
 
 export default {
     name: "ViewPropertyInfos",
     components: {
-        CarouselGallery,
+        Gallery,
     },
     data: function () {
         return {

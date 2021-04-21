@@ -5,18 +5,18 @@
             <p class="sectionText">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
-            <carousel-gallery type="plantas" :images="property.plantas" />
+            <gallery :items="property.plantas" target="plantas" />
         </section>
     </div>
 </template>
 
 <script>
-import CarouselGallery from "@/components/carouselGallery";
+import Gallery from "@/components/gallery";
 
 export default {
     name: "ViewPropertyPlantas",
     components: {
-        CarouselGallery,
+        Gallery,
     },
     data: function () {
         return {

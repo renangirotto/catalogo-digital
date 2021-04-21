@@ -1,12 +1,16 @@
 <template>
-    <nav class="nav">
+    <nav class="nav" :class="{ active: this.trigger }">
         <button class="nav__trigger" @click="toggleNav">
             <font-awesome-icon v-if="!this.trigger" icon="bars" size="2x" />
             <font-awesome-icon v-if="this.trigger" icon="times" size="2x" />
         </button>
         <transition-group name="fade" tag="ul" class="nav__list">
             <router-link
-                :to="index == menu.length - 1 ? `/` :`/imovel/${$route.params.propertyName}/${item.route}`"
+                :to="
+                    index == menu.length - 1
+                        ? `/`
+                        : `/imovel/${$route.params.propertyName}/${item.route}`
+                "
                 tag="li"
                 v-for="(item, index) in menu"
                 @click.native="toggleNav"
@@ -120,6 +124,65 @@ export default {
         left: 32px;
     }
 
+    &::before {
+        content: "";
+        display: block;
+        width: 0vw;
+        height: 100vh;
+        position: absolute;
+        top: -16px;
+        left: -16px;
+        z-index: $z-index-1;
+        background: rgba(29, 29, 29, 0.72);
+        background: -moz-linear-gradient(
+            -45deg,
+            rgba(29, 29, 29, 0.72) 0%,
+            rgba(255, 255, 255, 0) 50%
+        );
+        background: -webkit-gradient(
+            left top,
+            right bottom,
+            color-stop(0%, rgba(29, 29, 29, 0.72)),
+            color-stop(50%, rgba(255, 255, 255, 0))
+        );
+        background: -webkit-linear-gradient(
+            -45deg,
+            rgba(29, 29, 29, 0.72) 0%,
+            rgba(255, 255, 255, 0) 50%
+        );
+        background: -o-linear-gradient(
+            -45deg,
+            rgba(29, 29, 29, 0.72) 0%,
+            rgba(255, 255, 255, 0) 50%
+        );
+        background: -ms-linear-gradient(
+            -45deg,
+            rgba(29, 29, 29, 0.72) 0%,
+            rgba(255, 255, 255, 0) 50%
+        );
+        background: linear-gradient(
+            135deg,
+            rgba(29, 29, 29, 0.72) 0%,
+            rgba(255, 255, 255, 0) 50%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d1d1d', endColorstr='#ffffff', GradientType=1 );
+        opacity: 0;
+        transition: width 1s, opacity .5s;
+
+        @media #{$mq-md} {
+            height: calc(100vh - #{$navbarTopHeight});
+            top: -32px;
+            left: -32px;
+        }
+    }
+
+    &.active {
+        &::before {
+            width: 100vw;
+            opacity: 1;
+        }
+    }
+
     @include element(trigger) {
         min-width: 56px;
         max-width: 56px;
@@ -127,6 +190,8 @@ export default {
         max-height: 56px;
         border: 0;
         border-radius: 50%;
+        position: relative;
+        z-index: $z-index-2;
         color: $white;
         background-color: $brand;
         -webkit-box-shadow: 0px 2px 5px 0px rgba(68, 68, 68, 0.3);
@@ -147,6 +212,7 @@ export default {
             border-radius: 4px;
             position: relative;
             left: 0px;
+            z-index: $z-index-2;
             font-size: 20px;
             color: $white;
             background-color: $brand;

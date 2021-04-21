@@ -5,18 +5,18 @@
             <p class="sectionText">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
-            <carousel-gallery type="decorado" :images="property.decorado" />
+            <gallery :items="property.decorado" target="decorado" />
         </section>
     </div>
 </template>
 
 <script>
-import CarouselGallery from "@/components/carouselGallery";
+import Gallery from "@/components/gallery";
 
 export default {
     name: "ViewPropertyDecorado",
     components: {
-        CarouselGallery,
+        Gallery
     },
     data: function () {
         return {

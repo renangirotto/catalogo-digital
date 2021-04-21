@@ -20,11 +20,6 @@ export default {
 #app {
     min-height: 100vh;
 
-    // @media #{$mq-md} {
-    //     max-height: 100vh;
-    //     overflow: hidden;
-    // }
-
     section {
         &.fullscreen {
             box-sizing: border-box;

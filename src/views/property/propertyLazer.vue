@@ -5,18 +5,18 @@
             <p class="sectionText">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
-            <carousel-gallery type="lazer" :images="property.lazer" />
+            <gallery :items="property.lazer" target="lazer" />
         </section>
     </div>
 </template>
 
 <script>
-import CarouselGallery from "@/components/carouselGallery";
+import Gallery from "@/components/gallery";
 
 export default {
     name: "ViewPropertyLazer",
     components: {
-        CarouselGallery,
+        Gallery
     },
     data: function () {
         return {

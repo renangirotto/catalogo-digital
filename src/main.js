@@ -13,6 +13,9 @@ import '@/plugins/fontawesome/fontawesome.js';
 //Vue Slick Carousel Configs
 import '@/plugins/vue-slick-carousel/vue-slick-carousel.js'
 
+//Vue Picture Swipe
+import '@/plugins/vue-picture-swipe/vue-picture-swipe.js'
+
 Vue.config.productionTip = false
 
 new Vue({

@@ -11,7 +11,7 @@
             :key="image.name"
             class="carouselHero__item"
         >
-            <img :src="`/static/images/home/${image.name}`" alt="" />
+            <img :src="`${publicPath}static/images/home/${image.name}`" alt="" />
         </figure>
     </transition-group>
 </template>
@@ -24,6 +24,7 @@ export default {
     },
     data: function () {
         return {
+            publicPath: process.env.BASE_URL,
             dataImages: [],
             slideInitial: 0,
             slideSpeed: 8, //in seconds

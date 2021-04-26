@@ -3,7 +3,7 @@
         <div class="navbar__top">
             <router-link to="/" tag="figure" class="navbar__top__logo">
                 <img
-                    :src="`/static/images/company/logo-company.svg`"
+                    :src="`${publicPath}static/images/company/logo-company.svg`"
                     :alt="companyName"
                 />
             </router-link>

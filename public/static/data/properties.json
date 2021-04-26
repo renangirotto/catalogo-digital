@@ -188,7 +188,12 @@
                     "title": "Planta 03"
                 }
             ],
-            "video": "https://www.youtube.com/embed/px12o_4Dg-8",
+            "videos": [
+                {
+                    "title": "Vídeo 01",
+                    "src": "https://www.youtube.com/embed/px12o_4Dg-8"
+                }
+            ],
             "model": "https://my.matterport.com/show/?m=19DbPwCnknA&play=1"
         },
         {
@@ -379,7 +384,12 @@
                     "title": "Planta 03"
                 }
             ],
-            "video": "https://www.youtube.com/embed/px12o_4Dg-8",
+            "videos": [
+                {
+                    "title": "Vídeo 01",
+                    "src": "https://www.youtube.com/embed/px12o_4Dg-8"
+                }
+            ],
             "model": "https://my.matterport.com/show/?m=19DbPwCnknA&play=1"
         },
         {
@@ -570,7 +580,12 @@
                     "title": "Planta 03"
                 }
             ],
-            "video": "https://www.youtube.com/embed/px12o_4Dg-8",
+            "videos": [
+                {
+                    "title": "Vídeo 01",
+                    "src": "https://www.youtube.com/embed/px12o_4Dg-8"
+                }
+            ],
             "model": "https://my.matterport.com/show/?m=19DbPwCnknA&play=1"
         },
         {
@@ -761,7 +776,12 @@
                     "title": "Planta 03"
                 }
             ],
-            "video": "https://www.youtube.com/embed/px12o_4Dg-8",
+            "videos": [
+                {
+                    "title": "Vídeo 01",
+                    "src": "https://www.youtube.com/embed/px12o_4Dg-8"
+                }
+            ],
             "model": "https://my.matterport.com/show/?m=19DbPwCnknA&play=1"
         },
         {
@@ -952,7 +972,12 @@
                     "title": "Planta 03"
                 }
             ],
-            "video": "https://www.youtube.com/embed/px12o_4Dg-8",
+            "videos": [
+                {
+                    "title": "Vídeo 01",
+                    "src": "https://www.youtube.com/embed/px12o_4Dg-8"
+                }
+            ],
             "model": "https://my.matterport.com/show/?m=19DbPwCnknA&play=1"
         },
         {
@@ -1143,7 +1168,12 @@
                     "title": "Planta 03"
                 }
             ],
-            "video": "https://www.youtube.com/embed/px12o_4Dg-8",
+            "videos": [
+                {
+                    "title": "Vídeo 01",
+                    "src": "https://www.youtube.com/embed/px12o_4Dg-8"
+                }
+            ],
             "model": "https://my.matterport.com/show/?m=19DbPwCnknA&play=1"
         }
     ]

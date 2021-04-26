@@ -16,7 +16,7 @@ const getters = {
 //Actions
 const actions = {
     fetchHero({ commit }) {
-        fetch('/static/data/homeSlide.json', {
+        fetch(`${process.env.BASE_URL}static/data/homeSlide.json`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ const actions = {
             });
     },
     fetchProperties({ commit }) {
-        fetch('/static/data/properties.json', {
+        fetch(`${process.env.BASE_URL}static/data/properties.json`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

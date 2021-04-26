@@ -22,3 +22,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Live example
+[https://renangirotto.github.io/catalogo-digital/](https://renangirotto.github.io/catalogo-digital/)

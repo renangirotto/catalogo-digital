@@ -2,7 +2,7 @@
     <div class="viewPropertyModel">
         <section class="viewPropertyModel__container fullscreen">
             <iframe v-if="getProperties.length > 0"
-                :src="getPropertyImage(getProperties)"
+                :src="getPropertyModel(getProperties)"
             ></iframe>
         </section>
     </div>
@@ -19,7 +19,7 @@ export default {
         ]),
     },
     methods: {
-        getPropertyImage(array) {
+        getPropertyModel(array) {
             if (array.length > 0) {
                 let property = array.find((element) => {
                     if (element.url == this.$route.params.propertyName) {

@@ -1,5 +1,7 @@
 <template>
-    <vue-picture-swipe :items="itemsGallery"></vue-picture-swipe>
+    <vue-picture-swipe
+        :items="itemsGallery"
+    ></vue-picture-swipe>
 </template>
 
 <script>
@@ -20,13 +22,13 @@ export default {
             //Push prop element inside new array
             this.itemsGallery.push({
                 //Change src prop to a request of the image
-                src: `/static/images/properties/${this.$route.params.propertyName}/${this.target}/${element.src}`,
+                src: `${this.publicPath}static/images/properties/${this.$route.params.propertyName}/${this.target}/${element.src}`,
                 //Change thumbnail prop to a request of the image
-                thumbnail: `/static/images/properties/${this.$route.params.propertyName}/${this.target}/${element.thumbnail}`,
+                thumbnail: `${this.publicPath}static/images/properties/${this.$route.params.propertyName}/${this.target}/${element.thumbnail}`,
                 w: element.w,
                 h: element.h,
-                title: element.title
-            })
+                title: element.title,
+            });
         });
     },
 };

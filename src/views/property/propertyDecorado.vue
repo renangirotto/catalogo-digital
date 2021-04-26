@@ -5,7 +5,7 @@
             <p class="sectionText">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
-            <gallery v-if="getProperties.length > 0" :items="getPropertyImage(getProperties)" target="decorado" />
+            <gallery v-if="getProperties.length > 0" :items="getPropertyDecorado(getProperties)" target="decorado" />
         </section>
     </div>
 </template>
@@ -26,7 +26,7 @@ export default {
         ]),
     },
     methods: {
-        getPropertyImage(array) {
+        getPropertyDecorado(array) {
             if (array.length > 0) {
                 let property = array.find((element) => {
                     if (element.url == this.$route.params.propertyName) {

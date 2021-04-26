@@ -5,7 +5,7 @@
                 class="viewPropertyHome__container__image"
                 v-if="getProperties.length > 0"
                 :style="{
-                    backgroundImage: `url(/static/images/properties/${getPropertyImage(getProperties)}/hero.jpg`,
+                    backgroundImage: `url(${publicPath}static/images/properties/${getPropertyImage(getProperties)}/hero.jpg`,
                 }"
             ></div>
         </section>
@@ -16,6 +16,11 @@
 import { mapGetters } from "vuex";
 
 export default {
+    data: function () {
+        return {
+            publicPath: process.env.BASE_URL,
+        };
+    },
     computed: {
         ...mapGetters([
             'getProperties'

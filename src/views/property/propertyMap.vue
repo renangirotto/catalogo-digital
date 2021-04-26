@@ -3,7 +3,7 @@
         <section class="viewPropertyMap__container fullscreen">
             <iframe
             v-if="getProperties.length > 0"
-            :src="getPropertyImage(getProperties)"
+            :src="getPropertyMap(getProperties)"
             style="border: 0"
             allowfullscreen=""
         ></iframe>
@@ -21,7 +21,7 @@ export default {
         ]),
     },
     methods: {
-        getPropertyImage(array) {
+        getPropertyMap(array) {
             if (array.length > 0) {
                 let property = array.find((element) => {
                     if (element.url == this.$route.params.propertyName) {

@@ -4,7 +4,7 @@
             <div
                 class="cardProperty__content__thumb"
                 :style="{
-                    backgroundImage: `url(${require(`./../../assets/images/properties/${imageUrl}/thumb.jpg`)})`,
+                    backgroundImage: `url(/static/images/properties/${imageUrl}/thumb.jpg)`,
                 }"
             ></div>
             <h3 class="cardProperty__content__name">{{ name }}</h3>
@@ -19,6 +19,11 @@ export default {
         imageUrl: String,
         name: String,
         url: String,
+    },
+    data: function () {
+        return {
+            publicPath: process.env.BASE_URL,
+        };
     },
 };
 </script>

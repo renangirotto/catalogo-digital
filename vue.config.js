@@ -8,5 +8,6 @@ module.exports = {
         }
       }
     },
-    publicPath: process.env.NODE_ENV === 'production' ? '/catalogo-digital/' : '/'
+    publicPath: process.env.NODE_ENV === 'production' ? '/catalogo-digital/' : '/' //Use for github pages
+    // publicPath: '/' //Use outside github pages
   };

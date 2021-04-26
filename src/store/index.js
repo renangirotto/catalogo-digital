@@ -1,19 +1,73 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-//Import Home Slide list
-import homeSlideJSON from '@/data/homeSlide.json'
+//State
+const state = {
+    homeSlide: [],
+    properties: []
+}
 
-//Import properties data
-import propertiesJSON from '@/data/properties.json'
+//Getters
+const getters = {
+    getHomeSlide: (state) => state.homeSlide,
+    getProperties: (state) => state.properties,
+}
 
+//Actions
+const actions = {
+    fetchHero({ commit }) {
+        fetch('/static/data/homeSlide.json', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        })
+            .then((response) => {
+                return response.json()
+            })
+            .then((json) => {
+                commit('SET_HERO', json.images)
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    },
+    fetchProperties({ commit }) {
+        fetch('/static/data/properties.json', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        })
+            .then((response) => {
+                return response.json()
+            })
+            .then((json) => {
+                commit('SET_PROPERTIES', json.properties)
+            })
+            .catch((err) => {
+                console.log('fetchProperties:', err);
+            });
+    }
+}
 
+//Mutations
+const mutations = {
+    SET_HERO(state, images) {
+        state.homeSlide = images
+    },
+    SET_PROPERTIES(state, images) {
+        state.properties = images
+    }
+}
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-    state: {
-        homeSlide: homeSlideJSON,
-        properties: propertiesJSON
-    }
+    state,
+    getters,
+    actions,
+    mutations
 })

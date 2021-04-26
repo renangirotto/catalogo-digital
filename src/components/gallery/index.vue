@@ -11,6 +11,7 @@ export default {
     },
     data: function () {
         return {
+            publicPath: process.env.BASE_URL,
             itemsGallery: [],
         };
     },
@@ -19,9 +20,9 @@ export default {
             //Push prop element inside new array
             this.itemsGallery.push({
                 //Change src prop to a request of the image
-                src: `${require(`./../../assets/images/properties/imovel-01/${this.target}/${element.src}`)}`,
+                src: `/static/images/properties/${this.$route.params.propertyName}/${this.target}/${element.src}`,
                 //Change thumbnail prop to a request of the image
-                thumbnail: `${require(`./../../assets/images/properties/imovel-01/${this.target}/${element.thumbnail}`)}`,
+                thumbnail: `/static/images/properties/${this.$route.params.propertyName}/${this.target}/${element.thumbnail}`,
                 w: element.w,
                 h: element.h,
                 title: element.title

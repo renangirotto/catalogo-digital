@@ -1,27 +1,37 @@
 <template>
     <div class="viewPropertyModel">
         <section class="viewPropertyModel__container fullscreen">
-            <iframe
-                :src="property.model"
+            <iframe v-if="getProperties.length > 0"
+                :src="getPropertyImage(getProperties)"
             ></iframe>
         </section>
     </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
     name: "ViewPropertyModel",
-    data: function () {
-        return {
-            property: Object,
-        };
+    computed: {
+        ...mapGetters([
+            'getProperties'
+        ]),
     },
-    beforeMount() {
-        this.property = this.$store.state.properties.find((element) => {
-            if (element.url == this.$route.params.propertyName) {
-                return element;
+    methods: {
+        getPropertyImage(array) {
+            if (array.length > 0) {
+                let property = array.find((element) => {
+                    if (element.url == this.$route.params.propertyName) {
+                        return element;
+                    }
+                });
+
+                return property.model;
+            } else {
+                return [];
             }
-        });
+        },
     },
 };
 </script>

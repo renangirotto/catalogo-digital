@@ -5,12 +5,14 @@
             <p class="sectionText">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
-            <gallery :items="property.infos" target="infos" />
+            <gallery v-if="getProperties.length > 0" :items="getPropertyImage(getProperties)" target="infos" />
         </section>
     </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 import Gallery from "@/components/gallery";
 
 export default {
@@ -18,17 +20,25 @@ export default {
     components: {
         Gallery,
     },
-    data: function () {
-        return {
-            property: Object,
-        };
+    computed: {
+        ...mapGetters([
+            'getProperties'
+        ]),
     },
-    beforeMount() {
-        this.property = this.$store.state.properties.find((element) => {
-            if (element.url == this.$route.params.propertyName) {
-                return element;
+    methods: {
+        getPropertyImage(array) {
+            if (array.length > 0) {
+                let property = array.find((element) => {
+                    if (element.url == this.$route.params.propertyName) {
+                        return element;
+                    }
+                });
+
+                return property.infos;
+            } else {
+                return [];
             }
-        });
+        },
     },
 };
 </script>

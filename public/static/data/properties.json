@@ -1,0 +1,1150 @@
+{
+    "properties": [
+        {
+            "name": "Imóvel 01",
+            "imageUrl": "imovel-01",
+            "url": "imovel-01",
+            "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.9206357365115!2d-46.5744193850215!3d-23.60717908466023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5cf484c3482b%3A0xfe1a413ad514167f!2sR.%20Helo%C3%ADsa%20Pamplona%2C%20232%20-%20Funda%C3%A7%C3%A3o%2C%20S%C3%A3o%20Caetano%20do%20Sul%20-%20SP%2C%2009520-320!5e0!3m2!1spt-BR!2sbr!4v1618523330526!5m2!1spt-BR!2sbr",
+            "infos": [
+                {
+                    "src": "infos-01.jpg",
+                    "thumbnail": "infos-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 01"
+                },
+                {
+                    "src": "infos-02.jpg",
+                    "thumbnail": "infos-02.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 02"
+                },
+                {
+                    "src": "infos-03.jpg",
+                    "thumbnail": "infos-03.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 03"
+                }
+            ],
+            "lazer": [
+                {
+                    "src": "lazer-01.jpg",
+                    "thumbnail": "lazer-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 01"
+                },
+                {
+                    "src": "lazer-02.jpg",
+                    "thumbnail": "lazer-02.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 02"
+                },
+                {
+                    "src": "lazer-03.jpg",
+                    "thumbnail": "lazer-03.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 03"
+                },
+                {
+                    "src": "lazer-04.jpg",
+                    "thumbnail": "lazer-04.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 04"
+                },
+                {
+                    "src": "lazer-05.jpg",
+                    "thumbnail": "lazer-05.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 05"
+                },
+                {
+                    "src": "lazer-06.jpg",
+                    "thumbnail": "lazer-06.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 06"
+                },
+                {
+                    "src": "lazer-07.jpg",
+                    "thumbnail": "lazer-07.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 07"
+                },
+                {
+                    "src": "lazer-08.jpg",
+                    "thumbnail": "lazer-08.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 08"
+                },
+                {
+                    "src": "lazer-09.jpg",
+                    "thumbnail": "lazer-09.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 09"
+                },
+                {
+                    "src": "lazer-10.jpg",
+                    "thumbnail": "lazer-10.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 10"
+                },
+                {
+                    "src": "lazer-11.jpg",
+                    "thumbnail": "lazer-11.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 11"
+                },
+                {
+                    "src": "lazer-12.jpg",
+                    "thumbnail": "lazer-12.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 12"
+                },
+                {
+                    "src": "lazer-13.jpg",
+                    "thumbnail": "lazer-13.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 13"
+                },
+                {
+                    "src": "lazer-14.jpg",
+                    "thumbnail": "lazer-14.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 14"
+                },
+                {
+                    "src": "lazer-15.jpg",
+                    "thumbnail": "lazer-15.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 15"
+                }
+            ],
+            "decorado": [
+                {
+                    "src": "decorado-01.jpg",
+                    "thumbnail": "decorado-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Decorado 01"
+                },
+                {
+                    "src": "decorado-02.jpg",
+                    "thumbnail": "decorado-02.jpg",
+                    "w": 1400,
+                    "h": 934,
+                    "title": "Decorado 02"
+                },
+                {
+                    "src": "decorado-03.jpg",
+                    "thumbnail": "decorado-03.jpg",
+                    "w": 1400,
+                    "h": 934,
+                    "title": "Decorado 03"
+                },
+                {
+                    "src": "decorado-04.jpg",
+                    "thumbnail": "decorado-04.jpg",
+                    "w": 1400,
+                    "h": 866,
+                    "title": "Decorado 04"
+                }
+            ],
+            "plantas": [
+                {
+                    "src": "planta-01.jpg",
+                    "thumbnail": "planta-01.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 01"
+                },
+                {
+                    "src": "planta-02.jpg",
+                    "thumbnail": "planta-02.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 02"
+                },
+                {
+                    "src": "planta-03.jpg",
+                    "thumbnail": "planta-03.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 03"
+                }
+            ],
+            "video": "https://www.youtube.com/embed/px12o_4Dg-8",
+            "model": "https://my.matterport.com/show/?m=19DbPwCnknA&play=1"
+        },
+        {
+            "name": "Imóvel 02",
+            "imageUrl": "imovel-02",
+            "url": "imovel-02",
+            "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7314.391393569067!2d-46.660259265112316!3d-23.561413999999978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ceb1eb771f%3A0xe904f6a669744da1!2sMuseu%20de%20Arte%20de%20S%C3%A3o%20Paulo%20Assis%20Chateaubriand!5e0!3m2!1spt-BR!2sbr!4v1618524339566!5m2!1spt-BR!2sbr",
+            "infos": [
+                {
+                    "src": "infos-01.jpg",
+                    "thumbnail": "infos-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 01"
+                },
+                {
+                    "src": "infos-02.jpg",
+                    "thumbnail": "infos-02.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 02"
+                },
+                {
+                    "src": "infos-03.jpg",
+                    "thumbnail": "infos-03.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 03"
+                }
+            ],
+            "lazer": [
+                {
+                    "src": "lazer-01.jpg",
+                    "thumbnail": "lazer-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 01"
+                },
+                {
+                    "src": "lazer-02.jpg",
+                    "thumbnail": "lazer-02.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 02"
+                },
+                {
+                    "src": "lazer-03.jpg",
+                    "thumbnail": "lazer-03.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 03"
+                },
+                {
+                    "src": "lazer-04.jpg",
+                    "thumbnail": "lazer-04.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 04"
+                },
+                {
+                    "src": "lazer-05.jpg",
+                    "thumbnail": "lazer-05.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 05"
+                },
+                {
+                    "src": "lazer-06.jpg",
+                    "thumbnail": "lazer-06.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 06"
+                },
+                {
+                    "src": "lazer-07.jpg",
+                    "thumbnail": "lazer-07.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 07"
+                },
+                {
+                    "src": "lazer-08.jpg",
+                    "thumbnail": "lazer-08.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 08"
+                },
+                {
+                    "src": "lazer-09.jpg",
+                    "thumbnail": "lazer-09.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 09"
+                },
+                {
+                    "src": "lazer-10.jpg",
+                    "thumbnail": "lazer-10.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 10"
+                },
+                {
+                    "src": "lazer-11.jpg",
+                    "thumbnail": "lazer-11.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 11"
+                },
+                {
+                    "src": "lazer-12.jpg",
+                    "thumbnail": "lazer-12.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 12"
+                },
+                {
+                    "src": "lazer-13.jpg",
+                    "thumbnail": "lazer-13.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 13"
+                },
+                {
+                    "src": "lazer-14.jpg",
+                    "thumbnail": "lazer-14.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 14"
+                },
+                {
+                    "src": "lazer-15.jpg",
+                    "thumbnail": "lazer-15.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 15"
+                }
+            ],
+            "decorado": [
+                {
+                    "src": "decorado-01.jpg",
+                    "thumbnail": "decorado-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Decorado 01"
+                },
+                {
+                    "src": "decorado-02.jpg",
+                    "thumbnail": "decorado-02.jpg",
+                    "w": 1400,
+                    "h": 934,
+                    "title": "Decorado 02"
+                },
+                {
+                    "src": "decorado-03.jpg",
+                    "thumbnail": "decorado-03.jpg",
+                    "w": 1400,
+                    "h": 934,
+                    "title": "Decorado 03"
+                },
+                {
+                    "src": "decorado-04.jpg",
+                    "thumbnail": "decorado-04.jpg",
+                    "w": 1400,
+                    "h": 866,
+                    "title": "Decorado 04"
+                }
+            ],
+            "plantas": [
+                {
+                    "src": "planta-01.jpg",
+                    "thumbnail": "planta-01.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 01"
+                },
+                {
+                    "src": "planta-02.jpg",
+                    "thumbnail": "planta-02.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 02"
+                },
+                {
+                    "src": "planta-03.jpg",
+                    "thumbnail": "planta-03.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 03"
+                }
+            ],
+            "video": "https://www.youtube.com/embed/px12o_4Dg-8",
+            "model": "https://my.matterport.com/show/?m=19DbPwCnknA&play=1"
+        },
+        {
+            "name": "Imóvel 03",
+            "imageUrl": "imovel-03",
+            "url": "imovel-03",
+            "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.9206357365115!2d-46.5744193850215!3d-23.60717908466023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5cf484c3482b%3A0xfe1a413ad514167f!2sR.%20Helo%C3%ADsa%20Pamplona%2C%20232%20-%20Funda%C3%A7%C3%A3o%2C%20S%C3%A3o%20Caetano%20do%20Sul%20-%20SP%2C%2009520-320!5e0!3m2!1spt-BR!2sbr!4v1618523330526!5m2!1spt-BR!2sbr",
+            "infos": [
+                {
+                    "src": "infos-01.jpg",
+                    "thumbnail": "infos-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 01"
+                },
+                {
+                    "src": "infos-02.jpg",
+                    "thumbnail": "infos-02.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 02"
+                },
+                {
+                    "src": "infos-03.jpg",
+                    "thumbnail": "infos-03.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 03"
+                }
+            ],
+            "lazer": [
+                {
+                    "src": "lazer-01.jpg",
+                    "thumbnail": "lazer-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 01"
+                },
+                {
+                    "src": "lazer-02.jpg",
+                    "thumbnail": "lazer-02.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 02"
+                },
+                {
+                    "src": "lazer-03.jpg",
+                    "thumbnail": "lazer-03.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 03"
+                },
+                {
+                    "src": "lazer-04.jpg",
+                    "thumbnail": "lazer-04.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 04"
+                },
+                {
+                    "src": "lazer-05.jpg",
+                    "thumbnail": "lazer-05.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 05"
+                },
+                {
+                    "src": "lazer-06.jpg",
+                    "thumbnail": "lazer-06.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 06"
+                },
+                {
+                    "src": "lazer-07.jpg",
+                    "thumbnail": "lazer-07.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 07"
+                },
+                {
+                    "src": "lazer-08.jpg",
+                    "thumbnail": "lazer-08.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 08"
+                },
+                {
+                    "src": "lazer-09.jpg",
+                    "thumbnail": "lazer-09.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 09"
+                },
+                {
+                    "src": "lazer-10.jpg",
+                    "thumbnail": "lazer-10.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 10"
+                },
+                {
+                    "src": "lazer-11.jpg",
+                    "thumbnail": "lazer-11.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 11"
+                },
+                {
+                    "src": "lazer-12.jpg",
+                    "thumbnail": "lazer-12.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 12"
+                },
+                {
+                    "src": "lazer-13.jpg",
+                    "thumbnail": "lazer-13.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 13"
+                },
+                {
+                    "src": "lazer-14.jpg",
+                    "thumbnail": "lazer-14.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 14"
+                },
+                {
+                    "src": "lazer-15.jpg",
+                    "thumbnail": "lazer-15.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 15"
+                }
+            ],
+            "decorado": [
+                {
+                    "src": "decorado-01.jpg",
+                    "thumbnail": "decorado-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Decorado 01"
+                },
+                {
+                    "src": "decorado-02.jpg",
+                    "thumbnail": "decorado-02.jpg",
+                    "w": 1400,
+                    "h": 934,
+                    "title": "Decorado 02"
+                },
+                {
+                    "src": "decorado-03.jpg",
+                    "thumbnail": "decorado-03.jpg",
+                    "w": 1400,
+                    "h": 934,
+                    "title": "Decorado 03"
+                },
+                {
+                    "src": "decorado-04.jpg",
+                    "thumbnail": "decorado-04.jpg",
+                    "w": 1400,
+                    "h": 866,
+                    "title": "Decorado 04"
+                }
+            ],
+            "plantas": [
+                {
+                    "src": "planta-01.jpg",
+                    "thumbnail": "planta-01.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 01"
+                },
+                {
+                    "src": "planta-02.jpg",
+                    "thumbnail": "planta-02.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 02"
+                },
+                {
+                    "src": "planta-03.jpg",
+                    "thumbnail": "planta-03.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 03"
+                }
+            ],
+            "video": "https://www.youtube.com/embed/px12o_4Dg-8",
+            "model": "https://my.matterport.com/show/?m=19DbPwCnknA&play=1"
+        },
+        {
+            "name": "Imóvel 04",
+            "imageUrl": "imovel-04",
+            "url": "imovel-04",
+            "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.9206357365115!2d-46.5744193850215!3d-23.60717908466023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5cf484c3482b%3A0xfe1a413ad514167f!2sR.%20Helo%C3%ADsa%20Pamplona%2C%20232%20-%20Funda%C3%A7%C3%A3o%2C%20S%C3%A3o%20Caetano%20do%20Sul%20-%20SP%2C%2009520-320!5e0!3m2!1spt-BR!2sbr!4v1618523330526!5m2!1spt-BR!2sbr",
+            "infos": [
+                {
+                    "src": "infos-01.jpg",
+                    "thumbnail": "infos-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 01"
+                },
+                {
+                    "src": "infos-02.jpg",
+                    "thumbnail": "infos-02.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 02"
+                },
+                {
+                    "src": "infos-03.jpg",
+                    "thumbnail": "infos-03.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 03"
+                }
+            ],
+            "lazer": [
+                {
+                    "src": "lazer-01.jpg",
+                    "thumbnail": "lazer-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 01"
+                },
+                {
+                    "src": "lazer-02.jpg",
+                    "thumbnail": "lazer-02.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 02"
+                },
+                {
+                    "src": "lazer-03.jpg",
+                    "thumbnail": "lazer-03.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 03"
+                },
+                {
+                    "src": "lazer-04.jpg",
+                    "thumbnail": "lazer-04.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 04"
+                },
+                {
+                    "src": "lazer-05.jpg",
+                    "thumbnail": "lazer-05.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 05"
+                },
+                {
+                    "src": "lazer-06.jpg",
+                    "thumbnail": "lazer-06.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 06"
+                },
+                {
+                    "src": "lazer-07.jpg",
+                    "thumbnail": "lazer-07.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 07"
+                },
+                {
+                    "src": "lazer-08.jpg",
+                    "thumbnail": "lazer-08.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 08"
+                },
+                {
+                    "src": "lazer-09.jpg",
+                    "thumbnail": "lazer-09.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 09"
+                },
+                {
+                    "src": "lazer-10.jpg",
+                    "thumbnail": "lazer-10.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 10"
+                },
+                {
+                    "src": "lazer-11.jpg",
+                    "thumbnail": "lazer-11.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 11"
+                },
+                {
+                    "src": "lazer-12.jpg",
+                    "thumbnail": "lazer-12.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 12"
+                },
+                {
+                    "src": "lazer-13.jpg",
+                    "thumbnail": "lazer-13.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 13"
+                },
+                {
+                    "src": "lazer-14.jpg",
+                    "thumbnail": "lazer-14.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 14"
+                },
+                {
+                    "src": "lazer-15.jpg",
+                    "thumbnail": "lazer-15.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 15"
+                }
+            ],
+            "decorado": [
+                {
+                    "src": "decorado-01.jpg",
+                    "thumbnail": "decorado-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Decorado 01"
+                },
+                {
+                    "src": "decorado-02.jpg",
+                    "thumbnail": "decorado-02.jpg",
+                    "w": 1400,
+                    "h": 934,
+                    "title": "Decorado 02"
+                },
+                {
+                    "src": "decorado-03.jpg",
+                    "thumbnail": "decorado-03.jpg",
+                    "w": 1400,
+                    "h": 934,
+                    "title": "Decorado 03"
+                },
+                {
+                    "src": "decorado-04.jpg",
+                    "thumbnail": "decorado-04.jpg",
+                    "w": 1400,
+                    "h": 866,
+                    "title": "Decorado 04"
+                }
+            ],
+            "plantas": [
+                {
+                    "src": "planta-01.jpg",
+                    "thumbnail": "planta-01.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 01"
+                },
+                {
+                    "src": "planta-02.jpg",
+                    "thumbnail": "planta-02.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 02"
+                },
+                {
+                    "src": "planta-03.jpg",
+                    "thumbnail": "planta-03.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 03"
+                }
+            ],
+            "video": "https://www.youtube.com/embed/px12o_4Dg-8",
+            "model": "https://my.matterport.com/show/?m=19DbPwCnknA&play=1"
+        },
+        {
+            "name": "Imóvel 05",
+            "imageUrl": "imovel-05",
+            "url": "imovel-05",
+            "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.9206357365115!2d-46.5744193850215!3d-23.60717908466023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5cf484c3482b%3A0xfe1a413ad514167f!2sR.%20Helo%C3%ADsa%20Pamplona%2C%20232%20-%20Funda%C3%A7%C3%A3o%2C%20S%C3%A3o%20Caetano%20do%20Sul%20-%20SP%2C%2009520-320!5e0!3m2!1spt-BR!2sbr!4v1618523330526!5m2!1spt-BR!2sbr",
+            "infos": [
+                {
+                    "src": "infos-01.jpg",
+                    "thumbnail": "infos-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 01"
+                },
+                {
+                    "src": "infos-02.jpg",
+                    "thumbnail": "infos-02.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 02"
+                },
+                {
+                    "src": "infos-03.jpg",
+                    "thumbnail": "infos-03.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 03"
+                }
+            ],
+            "lazer": [
+                {
+                    "src": "lazer-01.jpg",
+                    "thumbnail": "lazer-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 01"
+                },
+                {
+                    "src": "lazer-02.jpg",
+                    "thumbnail": "lazer-02.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 02"
+                },
+                {
+                    "src": "lazer-03.jpg",
+                    "thumbnail": "lazer-03.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 03"
+                },
+                {
+                    "src": "lazer-04.jpg",
+                    "thumbnail": "lazer-04.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 04"
+                },
+                {
+                    "src": "lazer-05.jpg",
+                    "thumbnail": "lazer-05.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 05"
+                },
+                {
+                    "src": "lazer-06.jpg",
+                    "thumbnail": "lazer-06.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 06"
+                },
+                {
+                    "src": "lazer-07.jpg",
+                    "thumbnail": "lazer-07.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 07"
+                },
+                {
+                    "src": "lazer-08.jpg",
+                    "thumbnail": "lazer-08.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 08"
+                },
+                {
+                    "src": "lazer-09.jpg",
+                    "thumbnail": "lazer-09.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 09"
+                },
+                {
+                    "src": "lazer-10.jpg",
+                    "thumbnail": "lazer-10.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 10"
+                },
+                {
+                    "src": "lazer-11.jpg",
+                    "thumbnail": "lazer-11.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 11"
+                },
+                {
+                    "src": "lazer-12.jpg",
+                    "thumbnail": "lazer-12.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 12"
+                },
+                {
+                    "src": "lazer-13.jpg",
+                    "thumbnail": "lazer-13.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 13"
+                },
+                {
+                    "src": "lazer-14.jpg",
+                    "thumbnail": "lazer-14.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 14"
+                },
+                {
+                    "src": "lazer-15.jpg",
+                    "thumbnail": "lazer-15.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 15"
+                }
+            ],
+            "decorado": [
+                {
+                    "src": "decorado-01.jpg",
+                    "thumbnail": "decorado-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Decorado 01"
+                },
+                {
+                    "src": "decorado-02.jpg",
+                    "thumbnail": "decorado-02.jpg",
+                    "w": 1400,
+                    "h": 934,
+                    "title": "Decorado 02"
+                },
+                {
+                    "src": "decorado-03.jpg",
+                    "thumbnail": "decorado-03.jpg",
+                    "w": 1400,
+                    "h": 934,
+                    "title": "Decorado 03"
+                },
+                {
+                    "src": "decorado-04.jpg",
+                    "thumbnail": "decorado-04.jpg",
+                    "w": 1400,
+                    "h": 866,
+                    "title": "Decorado 04"
+                }
+            ],
+            "plantas": [
+                {
+                    "src": "planta-01.jpg",
+                    "thumbnail": "planta-01.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 01"
+                },
+                {
+                    "src": "planta-02.jpg",
+                    "thumbnail": "planta-02.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 02"
+                },
+                {
+                    "src": "planta-03.jpg",
+                    "thumbnail": "planta-03.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 03"
+                }
+            ],
+            "video": "https://www.youtube.com/embed/px12o_4Dg-8",
+            "model": "https://my.matterport.com/show/?m=19DbPwCnknA&play=1"
+        },
+        {
+            "name": "Imóvel 06",
+            "imageUrl": "imovel-06",
+            "url": "imovel-06",
+            "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.9206357365115!2d-46.5744193850215!3d-23.60717908466023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5cf484c3482b%3A0xfe1a413ad514167f!2sR.%20Helo%C3%ADsa%20Pamplona%2C%20232%20-%20Funda%C3%A7%C3%A3o%2C%20S%C3%A3o%20Caetano%20do%20Sul%20-%20SP%2C%2009520-320!5e0!3m2!1spt-BR!2sbr!4v1618523330526!5m2!1spt-BR!2sbr",
+            "infos": [
+                {
+                    "src": "infos-01.jpg",
+                    "thumbnail": "infos-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 01"
+                },
+                {
+                    "src": "infos-02.jpg",
+                    "thumbnail": "infos-02.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 02"
+                },
+                {
+                    "src": "infos-03.jpg",
+                    "thumbnail": "infos-03.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Infos 03"
+                }
+            ],
+            "lazer": [
+                {
+                    "src": "lazer-01.jpg",
+                    "thumbnail": "lazer-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 01"
+                },
+                {
+                    "src": "lazer-02.jpg",
+                    "thumbnail": "lazer-02.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 02"
+                },
+                {
+                    "src": "lazer-03.jpg",
+                    "thumbnail": "lazer-03.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 03"
+                },
+                {
+                    "src": "lazer-04.jpg",
+                    "thumbnail": "lazer-04.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 04"
+                },
+                {
+                    "src": "lazer-05.jpg",
+                    "thumbnail": "lazer-05.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 05"
+                },
+                {
+                    "src": "lazer-06.jpg",
+                    "thumbnail": "lazer-06.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 06"
+                },
+                {
+                    "src": "lazer-07.jpg",
+                    "thumbnail": "lazer-07.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 07"
+                },
+                {
+                    "src": "lazer-08.jpg",
+                    "thumbnail": "lazer-08.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 08"
+                },
+                {
+                    "src": "lazer-09.jpg",
+                    "thumbnail": "lazer-09.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 09"
+                },
+                {
+                    "src": "lazer-10.jpg",
+                    "thumbnail": "lazer-10.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 10"
+                },
+                {
+                    "src": "lazer-11.jpg",
+                    "thumbnail": "lazer-11.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 11"
+                },
+                {
+                    "src": "lazer-12.jpg",
+                    "thumbnail": "lazer-12.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 12"
+                },
+                {
+                    "src": "lazer-13.jpg",
+                    "thumbnail": "lazer-13.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 13"
+                },
+                {
+                    "src": "lazer-14.jpg",
+                    "thumbnail": "lazer-14.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 14"
+                },
+                {
+                    "src": "lazer-15.jpg",
+                    "thumbnail": "lazer-15.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Lazer 15"
+                }
+            ],
+            "decorado": [
+                {
+                    "src": "decorado-01.jpg",
+                    "thumbnail": "decorado-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Decorado 01"
+                },
+                {
+                    "src": "decorado-02.jpg",
+                    "thumbnail": "decorado-02.jpg",
+                    "w": 1400,
+                    "h": 934,
+                    "title": "Decorado 02"
+                },
+                {
+                    "src": "decorado-03.jpg",
+                    "thumbnail": "decorado-03.jpg",
+                    "w": 1400,
+                    "h": 934,
+                    "title": "Decorado 03"
+                },
+                {
+                    "src": "decorado-04.jpg",
+                    "thumbnail": "decorado-04.jpg",
+                    "w": 1400,
+                    "h": 866,
+                    "title": "Decorado 04"
+                }
+            ],
+            "plantas": [
+                {
+                    "src": "planta-01.jpg",
+                    "thumbnail": "planta-01.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 01"
+                },
+                {
+                    "src": "planta-02.jpg",
+                    "thumbnail": "planta-02.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 02"
+                },
+                {
+                    "src": "planta-03.jpg",
+                    "thumbnail": "planta-03.jpg",
+                    "w": 1100,
+                    "h": 920,
+                    "title": "Planta 03"
+                }
+            ],
+            "video": "https://www.youtube.com/embed/px12o_4Dg-8",
+            "model": "https://my.matterport.com/show/?m=19DbPwCnknA&play=1"
+        }
+    ]
+}

@@ -11,7 +11,7 @@
             :key="image.name"
             class="carouselHero__item"
         >
-            <img :src="require(`@/assets/images/home/${image.name}`)" alt="" />
+            <img :src="`/static/images/home/${image.name}`" alt="" />
         </figure>
     </transition-group>
 </template>

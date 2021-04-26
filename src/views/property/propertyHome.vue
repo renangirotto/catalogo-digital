@@ -3,8 +3,9 @@
         <section class="viewPropertyHome__container fullscreen">
             <div
                 class="viewPropertyHome__container__image"
+                v-if="getProperties.length > 0"
                 :style="{
-                    backgroundImage: `url(${require(`./../../assets/images/properties/${propertyHero}/hero.jpg`)})`,
+                    backgroundImage: `url(/static/images/properties/${getPropertyImage(getProperties)}/hero.jpg`,
                 }"
             ></div>
         </section>
@@ -12,17 +13,27 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
     computed: {
-        //Filter properties to get selected property hero
-        propertyHero: function () {
-            let target = this.$store.state.properties.find((element) => {
-                if (element.url == this.$route.params.propertyName) {
-                    return element;
-                }
-            });
+        ...mapGetters([
+            'getProperties'
+        ]),
+    },
+    methods: {
+        getPropertyImage(array) {
+            if (array.length > 0) {
+                let property = array.find((element) => {
+                    if (element.url == this.$route.params.propertyName) {
+                        return element;
+                    }
+                });
 
-            return target.imageUrl;
+                return property.imageUrl;
+            } else {
+                return [];
+            }
         },
     },
 };

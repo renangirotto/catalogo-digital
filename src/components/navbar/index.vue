@@ -3,13 +3,13 @@
         <div class="navbar__top">
             <router-link to="/" tag="figure" class="navbar__top__logo">
                 <img
-                    :src="require('@/assets/images/company/logo-company.svg')"
+                    :src="`/static/images/company/logo-company.svg`"
                     :alt="companyName"
                 />
             </router-link>
             <h1 v-if="this.$route.name == 'Home'" class="navbar__top__title">Catálogo Digital</h1>
             <select v-else v-model="selectedProperty" class="navbar__top__select">
-                <option v-for="property in properties" :key="property.name" :value="property.url">{{property.name}}</option>
+                <option v-for="property in getProperties" :key="property.name" :value="property.url">{{property.name}}</option>
             </select>
             <button class="navbar__top__expand" @click="toggleFullscreen">
                 <font-awesome-icon icon="expand" size="2x" />
@@ -20,6 +20,8 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 import Nav from "./nav";
 
 export default {
@@ -28,10 +30,15 @@ export default {
     },
     data: function () {
         return {
+            publicPath: process.env.BASE_URL,
             companyName: "Construtora Patriani",
-            properties: this.$store.state.properties,
             selectedProperty: this.$route.params.propertyName //bind with the properties select
         };
+    },
+    computed: {
+        ...mapGetters([
+            'getProperties'
+        ]),
     },
     watch: {
         selectedProperty: function(val) {
@@ -42,14 +49,12 @@ export default {
         },
         '$route.params.propertyName': function(val) {
             this.selectedProperty = val
-        }
+        },
     },
     methods: {
         toggleFullscreen: function () {
             //Get document html
             const elem = document.documentElement;
-
-            console.log(this.$route.name);
 
             //Check if the element is of fullscreen
             if (!document.fullscreenElement) {
@@ -140,7 +145,7 @@ export default {
             font-family: $rubik;
             font-size: 20px;
             color: $text-grey;
-            background-image: url("../../assets/images/icons/caret-down.svg");
+            background-image: url("/static/images/icons/caret-down.svg");
             background-position: right;
             background-size: 12px;
             background-repeat: no-repeat;

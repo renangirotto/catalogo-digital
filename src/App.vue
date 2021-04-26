@@ -13,6 +13,10 @@ export default {
     components: {
         Navbar,
     },
+    beforeMount() {
+        this.$store.dispatch("fetchHero");
+        this.$store.dispatch("fetchProperties");
+    }
 };
 </script>
 

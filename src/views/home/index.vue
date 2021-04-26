@@ -2,7 +2,7 @@
     <div class="viewHome">
         <transition name="hero" mode="out-in">
             <section class="viewHome__hero" v-show="activeHero">
-                <carousel-hero :images="hero" />
+                <carousel-hero v-if="getHomeSlide.length > 0" :images="getHomeSlide" />
                 <div class="viewHome__hero__anchor">
                     <button @click="toggleHero" class="more">
                         Nossos imóveis!
@@ -23,17 +23,20 @@
                 <p class="sectionText">
                     Escolha e navegue por nossas galerias!
                 </p>
-                <div class="viewHome__properties__carousel">
+                <div
+                    class="viewHome__properties__carousel"
+                    v-if="getProperties.length > 0"
+                >
                     <button class="arrow prev" @click="showPrev">
                         <font-awesome-icon icon="angle-left" />
                     </button>
                     <vue-slick-carousel
-                        v-if="properties.length"
+                        v-if="getProperties.length"
                         ref="carouselProperties"
                         v-bind="carouselSettings"
                     >
                         <div
-                            v-for="property in properties"
+                            v-for="property in getProperties"
                             :key="property.name"
                         >
                             <card-property
@@ -53,6 +56,8 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 import CarouselHero from "@/components/carouselHero";
 import CardProperty from "@/components/cardProperty";
 
@@ -65,8 +70,6 @@ export default {
     data: function () {
         return {
             activeHero: true,
-            hero: this.$store.state.homeSlide,
-            properties: this.$store.state.properties,
             carouselSettings: {
                 dots: true,
                 arrows: false,
@@ -106,6 +109,12 @@ export default {
                 ],
             },
         };
+    },
+    computed: {
+        ...mapGetters([
+            'getHomeSlide',
+            'getProperties'
+        ]),
     },
     methods: {
         toggleHero: function () {

@@ -41,7 +41,6 @@
                         >
                             <card-property
                                 :name="property.name"
-                                :imageUrl="property.imageUrl"
                                 :url="property.url"
                             />
                         </div>

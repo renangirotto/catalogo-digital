@@ -4,7 +4,7 @@
             <div
                 class="cardProperty__content__thumb"
                 :style="{
-                    backgroundImage: `url(${publicPath}static/images/properties/${imageUrl}/thumb.jpg)`,
+                    backgroundImage: `url(${publicPath}static/images/properties/${url}/thumb.jpg)`,
                 }"
             ></div>
             <h3 class="cardProperty__content__name">{{ name }}</h3>
@@ -16,7 +16,6 @@
 export default {
     name: "cardProperty",
     props: {
-        imageUrl: String,
         name: String,
         url: String,
     },

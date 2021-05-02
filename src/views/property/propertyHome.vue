@@ -35,7 +35,7 @@ export default {
                     }
                 });
 
-                return property.imageUrl;
+                return property.url;
             } else {
                 return [];
             }

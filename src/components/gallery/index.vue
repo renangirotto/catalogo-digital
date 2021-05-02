@@ -1,12 +1,22 @@
 <template>
-    <vue-picture-swipe
-        :items="itemsGallery"
-    ></vue-picture-swipe>
+    <div class="gallery">
+        <vue-picture-swipe :items="itemsGallery" v-on:open="toggleGallery" v-on:close="toggleGallery"></vue-picture-swipe>
+        <button class="drawTrigger" v-if="galleryOpen" @click="toggleDraw">
+            <font-awesome-icon v-if="!this.draw" icon="pen" size="2x" />
+            <font-awesome-icon v-if="this.draw" icon="times" size="2x" />
+        </button>
+        <draw-area v-if="this.draw"  />
+    </div>
 </template>
 
 <script>
+import DrawArea from "./../drawArea";
+
 export default {
     name: "Gallery",
+    components: {
+        DrawArea
+    },
     props: {
         target: String,
         items: Array,
@@ -15,6 +25,8 @@ export default {
         return {
             publicPath: process.env.BASE_URL,
             itemsGallery: [],
+            draw: false,
+            galleryOpen: false,
         };
     },
     beforeMount() {
@@ -31,6 +43,16 @@ export default {
             });
         });
     },
+    methods: {
+        toggleDraw: function() {
+            //Change the state of the trigger button
+            this.draw = !this.draw;
+        },
+        toggleGallery: function() {
+            //Change the state of gallery
+            this.galleryOpen = !this.galleryOpen;
+        }
+    }
 };
 </script>
 
@@ -140,6 +162,29 @@ export default {
                 transition: transform 0.5s;
             }
         }
+    }
+}
+
+.drawTrigger {
+    min-width: 56px;
+    max-width: 56px;
+    min-height: 56px;
+    max-height: 56px;
+    border: 0;
+    border-radius: 50%;
+    position: fixed;
+    top: 48px;
+    left: 24px;
+    z-index: 10000;
+    color: $white;
+    background-color: $brand;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(68, 68, 68, 0.3);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(68, 68, 68, 0.3);
+    box-shadow: 0px 2px 5px 0px rgba(68, 68, 68, 0.3);
+    cursor: pointer;
+
+    @media #{$mq-md} {
+        left: 48px;
     }
 }
 </style>

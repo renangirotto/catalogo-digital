@@ -1,7 +1,7 @@
 <template>
     <div class="viewPropertyVideo">
         <section class="viewPropertyVideo__container">
-            <h2 class="sectionTitle">Lazer</h2>
+            <h2 class="sectionTitle">Vídeos</h2>
             <p class="sectionText">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>

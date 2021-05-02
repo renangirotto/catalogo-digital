@@ -11,7 +11,7 @@ import Navbar from "./components/navbar";
 export default {
     name: "App",
     components: {
-        Navbar,
+        Navbar
     },
     beforeMount() {
         this.$store.dispatch("fetchHero");

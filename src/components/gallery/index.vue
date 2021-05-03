@@ -1,6 +1,6 @@
 <template>
     <div class="gallery">
-        <vue-picture-swipe :items="itemsGallery" v-on:open="toggleGallery" v-on:close="toggleGallery"></vue-picture-swipe>
+        <vue-picture-swipe :items="itemsGallery" :options="options"  v-on:open="toggleGallery" v-on:close="toggleGallery"></vue-picture-swipe>
         <button class="drawTrigger" v-if="galleryOpen" @click="toggleDraw">
             <font-awesome-icon v-if="!this.draw" icon="pen" size="2x" />
             <font-awesome-icon v-if="this.draw" icon="times" size="2x" />
@@ -25,6 +25,9 @@ export default {
         return {
             publicPath: process.env.BASE_URL,
             itemsGallery: [],
+            options: {
+                closeOnScroll: false,
+            },
             draw: false,
             galleryOpen: false,
         };
@@ -51,6 +54,12 @@ export default {
         toggleGallery: function() {
             //Change the state of gallery
             this.galleryOpen = !this.galleryOpen;
+            //Disable body scroll
+            if(this.galleryOpen) {
+                document.getElementsByTagName("body")[0].style.overflowY = 'hidden';
+            } else {
+                document.getElementsByTagName("body")[0].style.overflowY = 'auto';
+            }
         }
     }
 };
@@ -161,6 +170,14 @@ export default {
                 min-width: 180%;
                 transition: transform 0.5s;
             }
+        }
+    }
+}
+
+.pswp {
+    &.pswp--supports-fs {
+        .pswp__button--fs {
+            display: none!important;
         }
     }
 }

@@ -16,6 +16,9 @@ export default {
     beforeMount() {
         this.$store.dispatch("fetchHero");
         this.$store.dispatch("fetchProperties");
+    },
+    mounted() {
+        console.log("%c--- Versão 1.2 ---", "color:green");
     }
 };
 </script>
@@ -23,7 +26,6 @@ export default {
 <style lang="scss">
 #app {
     min-height: 100vh;
-
     section {
         &.fullscreen {
             box-sizing: border-box;

@@ -5,10 +5,13 @@
             :height="windowHeight"
             ref="drawCanvas"
             class="drawArea__canvas"
+            @mousedown="xyDown"
             @mousemove="xyMove"
             @mouseup="xyUpOut"
             @mouseout="xyUpOut"
-            @mousedown="xyDown"
+            @touchstart="xyStartTouch"
+            @touchmove="xyMoveTouch"
+            @touchend="xyEndTouch"
         ></canvas>
     </div>
 </template>
@@ -40,19 +43,17 @@ export default {
         this.canvasWidth = canvasRef.width;
         this.canvasHeight = canvasRef.height;
 
-        this.windowWidth = window.innerWidth
-        this.windowHeight = window.innerHeight
+        this.windowWidth = window.innerWidth;
+        this.windowHeight = window.innerHeight;
 
         window.addEventListener("resize", () => {
-            this.windowWidth = window.innerWidth
-            this.windowHeight = window.innerHeight
+            this.windowWidth = window.innerWidth;
+            this.windowHeight = window.innerHeight;
         });
     },
     methods: {
         //Handle mousedown
         xyDown: function (event) {
-            console.log(event);
-
             this.prevX = this.currX; //Get last x
             this.prevY = this.currY; //Get last y
             this.currX = event.clientX - 0; //Get new x
@@ -77,7 +78,6 @@ export default {
         },
         //Handle mousemove
         xyMove: function (event) {
-
             //Handle mouse action
             if (this.flag) {
                 this.prevX = this.currX; //Get last x
@@ -87,13 +87,41 @@ export default {
                 this.draw(); //Handle draw lines
             }
         },
+        xyStartTouch: function (event) {
+            this.prevX = this.currX; //Get last x
+            this.prevY = this.currY; //Get last y
+            this.currX = event.touches["0"].clientX - 0; //Get new x
+            this.currY = event.touches["0"].clientY - 0; //Get new y
+
+            //Enable flags to draw
+            this.flag = true;
+            this.dot_flag = true;
+
+            //Handle touch action
+            if (this.dot_flag) {
+                this.canvasContext.beginPath();
+                this.canvasContext.fillStyle = "red";
+                this.canvasContext.fillRect(this.currX, this.currY, 2, 2);
+                this.canvasContext.closePath();
+                this.dot_flag = false;
+            }
+        },
+        xyEndTouch: function() {
+            this.flag = false;
+        },
+        xyMoveTouch: function (event) {
+            //Handle touch action
+            if (this.flag) {
+                this.prevX = this.currX; //Get last x
+                this.prevY = this.currY; //Get last y
+                this.currX = event.touches["0"].clientX - 0; //Get new x
+                this.currY = event.touches["0"].clientY - 0; //Get new y
+                this.draw(); //Handle draw lines
+            }
+        },
         //Handle the draw, creating the lines on the canvas
         draw: function () {
             this.canvasContext.beginPath();
-            console.log("prevX", this.prevX);
-            console.log("prevY", this.prevY);
-            console.log("currX", this.currX);
-            console.log("currY", this.currY);
             this.canvasContext.moveTo(this.prevX, this.prevY); //Where the line goes
             this.canvasContext.lineTo(this.currX, this.currY); //Where the line came from
             this.canvasContext.strokeStyle = "red"; //Line color

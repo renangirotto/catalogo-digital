@@ -15,7 +15,7 @@
                 <font-awesome-icon icon="expand" size="2x" />
             </button>
         </div>
-        <navbar-nav v-if="this.$route.name != 'Home'" />
+        <navbar-nav v-if="this.$route.name != 'Home'" :selectedProperty="selectedProperty"  />
     </div>
 </template>
 

@@ -2,11 +2,9 @@
     <div class="viewPropertyVideo">
         <section class="viewPropertyVideo__container">
             <h2 class="sectionTitle">Vídeos</h2>
-            <p class="sectionText">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
             <div
                 class="viewPropertyVideo__gallery"
+                :class="{ 'viewPropertyVideo__gallery--centered': isCentered }"
                 v-if="getProperties.length > 0"
             >
                 <div
@@ -27,7 +25,10 @@
         </section>
         <div class="viewPropertyVideo__video" v-if="modalActive">
             <div class="viewPropertyVideo__video__container">
-                <button class="viewPropertyVideo__video__close" @click="closeVideo()">
+                <button
+                    class="viewPropertyVideo__video__close"
+                    @click="closeVideo()"
+                >
                     <font-awesome-icon icon="times" size="2x" />
                 </button>
                 <iframe
@@ -51,6 +52,7 @@ export default {
         return {
             modalActive: false,
             modalSrc: "",
+            isCentered: false, //Control how much elements have in the gallery to centralize the grid
         };
     },
     computed: {
@@ -64,6 +66,10 @@ export default {
                         return element;
                     }
                 });
+
+                if (property.videos.length <= 5) {
+                    this.isCentered = true;
+                }
 
                 return property.videos;
             } else {
@@ -81,7 +87,7 @@ export default {
         closeVideo() {
             this.modalActive = false;
             this.modalSrc = "";
-        }
+        },
     },
 };
 </script>
@@ -203,6 +209,10 @@ export default {
             background-position: center;
             background-repeat: no-repeat;
             transition: transform 0.5s;
+        }
+
+        @include modifier(centered) {
+            justify-content: center;
         }
     }
 

@@ -2,9 +2,6 @@
     <div class="viewPropertyPlantas">
         <section class="viewPropertyPlantas__container fullscreen">
             <h2 class="sectionTitle">Plantas</h2>
-            <p class="sectionText">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
             <gallery v-if="getProperties.length > 0" :items="getPropertyPlantas(getProperties)" target="plantas" />
         </section>
     </div>

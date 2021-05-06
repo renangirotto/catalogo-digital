@@ -134,6 +134,57 @@
                     "title": "Lazer 15"
                 }
             ],
+            "comum": [
+                {
+                    "src": "comum-01.jpg",
+                    "thumbnail": "comum-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 01"
+                },
+                {
+                    "src": "comum-02.jpg",
+                    "thumbnail": "comum-02.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 02"
+                },
+                {
+                    "src": "comum-03.jpg",
+                    "thumbnail": "comum-03.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 03"
+                },
+                {
+                    "src": "comum-04.jpg",
+                    "thumbnail": "comum-04.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 04"
+                },
+                {
+                    "src": "comum-05.jpg",
+                    "thumbnail": "comum-05.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 05"
+                },
+                {
+                    "src": "comum-06.jpg",
+                    "thumbnail": "comum-06.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 06"
+                },
+                {
+                    "src": "comum-07.jpg",
+                    "thumbnail": "comum-07.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 07"
+                }
+            ],
             "decorado": [
                 {
                     "src": "decorado-01.jpg",
@@ -186,14 +237,7 @@
                     "h": 920,
                     "title": "Planta 03"
                 }
-            ],
-            "videos": [
-                {
-                    "title": "Vídeo 01",
-                    "src": "https://www.youtube.com/embed/px12o_4Dg-8"
-                }
-            ],
-            "model": "https://my.matterport.com/show/?m=19DbPwCnknA&play=1"
+            ]
         },
         {
             "name": "Imóvel 02",
@@ -329,57 +373,55 @@
                     "title": "Lazer 15"
                 }
             ],
-            "decorado": [
+            "comum": [
                 {
-                    "src": "decorado-01.jpg",
-                    "thumbnail": "decorado-01.jpg",
+                    "src": "comum-01.jpg",
+                    "thumbnail": "comum-01.jpg",
                     "w": 1530,
                     "h": 920,
-                    "title": "Decorado 01"
+                    "title": "Comum 01"
                 },
                 {
-                    "src": "decorado-02.jpg",
-                    "thumbnail": "decorado-02.jpg",
-                    "w": 1400,
-                    "h": 934,
-                    "title": "Decorado 02"
-                },
-                {
-                    "src": "decorado-03.jpg",
-                    "thumbnail": "decorado-03.jpg",
-                    "w": 1400,
-                    "h": 934,
-                    "title": "Decorado 03"
-                },
-                {
-                    "src": "decorado-04.jpg",
-                    "thumbnail": "decorado-04.jpg",
-                    "w": 1400,
-                    "h": 866,
-                    "title": "Decorado 04"
-                }
-            ],
-            "plantas": [
-                {
-                    "src": "planta-01.jpg",
-                    "thumbnail": "planta-01.jpg",
-                    "w": 1100,
+                    "src": "comum-02.jpg",
+                    "thumbnail": "comum-02.jpg",
+                    "w": 1530,
                     "h": 920,
-                    "title": "Planta 01"
+                    "title": "Comum 02"
                 },
                 {
-                    "src": "planta-02.jpg",
-                    "thumbnail": "planta-02.jpg",
-                    "w": 1100,
+                    "src": "comum-03.jpg",
+                    "thumbnail": "comum-03.jpg",
+                    "w": 1530,
                     "h": 920,
-                    "title": "Planta 02"
+                    "title": "Comum 03"
                 },
                 {
-                    "src": "planta-03.jpg",
-                    "thumbnail": "planta-03.jpg",
-                    "w": 1100,
+                    "src": "comum-04.jpg",
+                    "thumbnail": "comum-04.jpg",
+                    "w": 1530,
                     "h": 920,
-                    "title": "Planta 03"
+                    "title": "Comum 04"
+                },
+                {
+                    "src": "comum-05.jpg",
+                    "thumbnail": "comum-05.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 05"
+                },
+                {
+                    "src": "comum-06.jpg",
+                    "thumbnail": "comum-06.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 06"
+                },
+                {
+                    "src": "comum-07.jpg",
+                    "thumbnail": "comum-07.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 07"
                 }
             ],
             "videos": [
@@ -523,67 +565,7 @@
                     "h": 920,
                     "title": "Lazer 15"
                 }
-            ],
-            "decorado": [
-                {
-                    "src": "decorado-01.jpg",
-                    "thumbnail": "decorado-01.jpg",
-                    "w": 1530,
-                    "h": 920,
-                    "title": "Decorado 01"
-                },
-                {
-                    "src": "decorado-02.jpg",
-                    "thumbnail": "decorado-02.jpg",
-                    "w": 1400,
-                    "h": 934,
-                    "title": "Decorado 02"
-                },
-                {
-                    "src": "decorado-03.jpg",
-                    "thumbnail": "decorado-03.jpg",
-                    "w": 1400,
-                    "h": 934,
-                    "title": "Decorado 03"
-                },
-                {
-                    "src": "decorado-04.jpg",
-                    "thumbnail": "decorado-04.jpg",
-                    "w": 1400,
-                    "h": 866,
-                    "title": "Decorado 04"
-                }
-            ],
-            "plantas": [
-                {
-                    "src": "planta-01.jpg",
-                    "thumbnail": "planta-01.jpg",
-                    "w": 1100,
-                    "h": 920,
-                    "title": "Planta 01"
-                },
-                {
-                    "src": "planta-02.jpg",
-                    "thumbnail": "planta-02.jpg",
-                    "w": 1100,
-                    "h": 920,
-                    "title": "Planta 02"
-                },
-                {
-                    "src": "planta-03.jpg",
-                    "thumbnail": "planta-03.jpg",
-                    "w": 1100,
-                    "h": 920,
-                    "title": "Planta 03"
-                }
-            ],
-            "videos": [
-                {
-                    "title": "Vídeo 01",
-                    "src": "https://www.youtube.com/embed/px12o_4Dg-8"
-                }
-            ],
-            "model": "https://my.matterport.com/show/?m=19DbPwCnknA&play=1"
+            ]
         },
         {
             "name": "Imóvel 04",
@@ -717,6 +699,57 @@
                     "w": 1530,
                     "h": 920,
                     "title": "Lazer 15"
+                }
+            ],
+            "comum": [
+                {
+                    "src": "comum-01.jpg",
+                    "thumbnail": "comum-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 01"
+                },
+                {
+                    "src": "comum-02.jpg",
+                    "thumbnail": "comum-02.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 02"
+                },
+                {
+                    "src": "comum-03.jpg",
+                    "thumbnail": "comum-03.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 03"
+                },
+                {
+                    "src": "comum-04.jpg",
+                    "thumbnail": "comum-04.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 04"
+                },
+                {
+                    "src": "comum-05.jpg",
+                    "thumbnail": "comum-05.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 05"
+                },
+                {
+                    "src": "comum-06.jpg",
+                    "thumbnail": "comum-06.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 06"
+                },
+                {
+                    "src": "comum-07.jpg",
+                    "thumbnail": "comum-07.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 07"
                 }
             ],
             "decorado": [
@@ -914,6 +947,57 @@
                     "title": "Lazer 15"
                 }
             ],
+            "comum": [
+                {
+                    "src": "comum-01.jpg",
+                    "thumbnail": "comum-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 01"
+                },
+                {
+                    "src": "comum-02.jpg",
+                    "thumbnail": "comum-02.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 02"
+                },
+                {
+                    "src": "comum-03.jpg",
+                    "thumbnail": "comum-03.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 03"
+                },
+                {
+                    "src": "comum-04.jpg",
+                    "thumbnail": "comum-04.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 04"
+                },
+                {
+                    "src": "comum-05.jpg",
+                    "thumbnail": "comum-05.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 05"
+                },
+                {
+                    "src": "comum-06.jpg",
+                    "thumbnail": "comum-06.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 06"
+                },
+                {
+                    "src": "comum-07.jpg",
+                    "thumbnail": "comum-07.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 07"
+                }
+            ],
             "decorado": [
                 {
                     "src": "decorado-01.jpg",
@@ -1107,6 +1191,57 @@
                     "w": 1530,
                     "h": 920,
                     "title": "Lazer 15"
+                }
+            ],
+            "comum": [
+                {
+                    "src": "comum-01.jpg",
+                    "thumbnail": "comum-01.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 01"
+                },
+                {
+                    "src": "comum-02.jpg",
+                    "thumbnail": "comum-02.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 02"
+                },
+                {
+                    "src": "comum-03.jpg",
+                    "thumbnail": "comum-03.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 03"
+                },
+                {
+                    "src": "comum-04.jpg",
+                    "thumbnail": "comum-04.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 04"
+                },
+                {
+                    "src": "comum-05.jpg",
+                    "thumbnail": "comum-05.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 05"
+                },
+                {
+                    "src": "comum-06.jpg",
+                    "thumbnail": "comum-06.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 06"
+                },
+                {
+                    "src": "comum-07.jpg",
+                    "thumbnail": "comum-07.jpg",
+                    "w": 1530,
+                    "h": 920,
+                    "title": "Comum 07"
                 }
             ],
             "decorado": [

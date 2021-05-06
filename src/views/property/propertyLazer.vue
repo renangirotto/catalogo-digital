@@ -1,10 +1,7 @@
 <template>
     <div class="viewPropertyLazer">
         <section class="viewPropertyLazer__container">
-            <h2 class="sectionTitle">Lazer</h2>
-            <p class="sectionText">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
+            <h2 class="sectionTitle">Área de Lazer</h2>
             <gallery v-if="getProperties.length > 0" :items="getPropertyLazer(getProperties)" target="lazer" />
         </section>
     </div>

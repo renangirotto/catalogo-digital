@@ -1,8 +1,8 @@
 <template>
-    <div class="viewPropertyInfos">
-        <section class="viewPropertyInfos__container fullscreen">
-            <h2 class="sectionTitle">Infos</h2>
-            <gallery v-if="getProperties.length > 0" :items="getPropertyInfos(getProperties)" target="infos" />
+    <div class="viewPropertyComum">
+        <section class="viewPropertyComum__container">
+            <h2 class="sectionTitle">Área Comum</h2>
+            <gallery v-if="getProperties.length > 0" :items="getPropertyComum(getProperties)" target="comum" />
         </section>
     </div>
 </template>
@@ -13,9 +13,9 @@ import { mapGetters } from "vuex";
 import Gallery from "@/components/gallery";
 
 export default {
-    name: "ViewPropertyInfos",
+    name: "ViewPropertyComum",
     components: {
-        Gallery,
+        Gallery
     },
     computed: {
         ...mapGetters([
@@ -23,7 +23,7 @@ export default {
         ]),
     },
     methods: {
-        getPropertyInfos(array) {
+        getPropertyComum(array) {
             if (array.length > 0) {
                 let property = array.find((element) => {
                     if (element.url == this.$route.params.propertyName) {
@@ -31,7 +31,7 @@ export default {
                     }
                 });
 
-                return property.infos;
+                return property.comum;
             } else {
                 return [];
             }
@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style lang="scss">
-.viewPropertyInfos {
+.viewPropertyComum {
     @include element(container) {
         box-sizing: border-box;
         display: flex;

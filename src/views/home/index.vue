@@ -20,9 +20,6 @@
             </button>
             <div class="viewHome__properties__container">
                 <h2 class="sectionTitle">Nossos imóveis</h2>
-                <p class="sectionText">
-                    Escolha e navegue por nossas galerias!
-                </p>
                 <div
                     class="viewHome__properties__carousel"
                     v-if="getProperties.length > 0"

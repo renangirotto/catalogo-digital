@@ -8,6 +8,7 @@ import PropertyIndex from '@/views/property'
 import PropertyHome from '@/views/property/propertyHome'
 import PropertyInfos from '@/views/property/propertyInfos'
 import PropertyLazer from '@/views/property/propertyLazer'
+import PropertyComum from '@/views/property/propertyComum'
 import PropertyDecorado from '@/views/property/propertyDecorado'
 import PropertyPlantas from '@/views/property/propertyPlantas'
 import PropertyVideo from '@/views/property/propertyVideo'
@@ -43,6 +44,11 @@ export default new Router({
                     path: 'lazer',
                     name: 'PropertyLazer',
                     component: PropertyLazer
+                },
+                {
+                    path: 'comum',
+                    name: 'PropertyComum',
+                    component: PropertyComum
                 },
                 {
                     path: 'decorado',

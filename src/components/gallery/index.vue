@@ -1,5 +1,5 @@
 <template>
-    <div class="gallery">
+    <div class="gallery" :class="{ centered: isCentered }">
         <vue-picture-swipe :items="itemsGallery" :options="options"  v-on:open="toggleGallery" v-on:close="toggleGallery"></vue-picture-swipe>
         <button class="drawTrigger" v-if="galleryOpen" @click="toggleDraw">
             <font-awesome-icon v-if="!this.draw" icon="pen" size="2x" />
@@ -25,8 +25,10 @@ export default {
         return {
             publicPath: process.env.BASE_URL,
             itemsGallery: [],
+            isCentered: false, //Control how much elements have in the gallery to centralize the grid
             options: {
                 closeOnScroll: false,
+                fullscreenEl: false, //Prevent fullscreen methods from the library core
             },
             draw: false,
             galleryOpen: false,
@@ -45,6 +47,10 @@ export default {
                 title: element.title,
             });
         });
+
+        if(this.items.length <= 5) {
+            this.isCentered = true
+        }
     },
     methods: {
         toggleDraw: function() {
@@ -66,6 +72,14 @@ export default {
 </script>
 
 <style lang="scss">
+.gallery {
+    &.centered {
+        .my-gallery {
+            justify-content: center;
+        }
+    }
+}
+
 .my-gallery {
     display: flex;
     align-items: center;

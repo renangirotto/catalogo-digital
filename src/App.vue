@@ -41,12 +41,12 @@ export default {
 
     .sectionTitle {
         font-weight: 500;
-        font-size: clamp(36px, 5vw, 44px);
+        font-size: clamp(36px, 5vw, 48px);
         text-align: center;
         color: $brand;
 
         &:not(:last-child) {
-            margin-bottom: 8px;
+            margin-bottom: 28px;
         }
     }
 

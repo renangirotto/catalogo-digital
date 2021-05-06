@@ -2,9 +2,6 @@
     <div class="viewPropertyDecorado">
         <section class="viewPropertyDecorado__container">
             <h2 class="sectionTitle">Decorado</h2>
-            <p class="sectionText">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
             <gallery v-if="getProperties.length > 0" :items="getPropertyDecorado(getProperties)" target="decorado" />
         </section>
     </div>

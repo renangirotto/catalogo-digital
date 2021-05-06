@@ -1,6 +1,6 @@
 <template>
     <nav class="nav" :class="{ active: this.trigger }">
-        <button class="nav__trigger" @click="toggleNav">
+        <button class="nav__trigger" @click="toggleNav" :disabled="disabled">
             <font-awesome-icon v-if="!this.trigger" icon="bars" size="2x" />
             <font-awesome-icon v-if="this.trigger" icon="times" size="2x" />
         </button>
@@ -32,11 +32,17 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
     name: "Nav",
+    props: {
+        selectedProperty: String,
+    },
     data: function () {
         return {
             trigger: false,
+            disabled: true,
             menu: [
                 {
                     name: "Início",
@@ -54,6 +60,12 @@ export default {
                     name: "Área de Lazer",
                     icon: "images",
                     route: "lazer",
+                    active: false,
+                },
+                {
+                    name: "Área Comum",
+                    icon: "images",
+                    route: "comum",
                     active: false,
                 },
                 {
@@ -83,7 +95,7 @@ export default {
                 {
                     name: "Mapa",
                     icon: "map-marker-alt",
-                    route: `mapa`,
+                    route: "mapa",
                     active: false,
                 },
                 {
@@ -95,18 +107,189 @@ export default {
             ],
         };
     },
+    beforeMount() {
+        //Close menu
+        this.closeNav();
+
+        //Build menu items
+        this.buildNav(this.selectedProperty);
+    },
+    computed: {
+        ...mapGetters(["getProperties"]),
+    },
+    watch: {
+        selectedProperty: function (val) {
+            //Close menu
+            this.closeNav();
+
+            //Build menu items
+            this.buildNav(val);
+        },
+        getProperties: function () {
+            //Close menu
+            this.closeNav();
+
+            //Build menu items
+            this.buildNav(this.selectedProperty);
+        },
+    },
     methods: {
         toggleNav: function () {
             //Change the state of the trigger button and global menu state
-            this.trigger = !this.trigger;
+            if (this.trigger) {
+                this.closeNav();
+            } else {
+                this.openNav();
+            }
+        },
+        openNav: function () {
+            //Toggle trigger
+            this.trigger = true;
 
             //Change individually the state of every menu item
             this.menu.map((element, index) => {
                 //Timeout to control list animation
                 setTimeout(function () {
-                    element.active = !element.active;
+                    element.active = true;
                 }, 100 * index);
             });
+        },
+        closeNav: function () {
+            //Toggle trigger
+            this.trigger = false;
+
+            //Change individually the state of every menu item
+            this.menu.map((element, index) => {
+                //Timeout to control list animation
+                setTimeout(function () {
+                    element.active = false;
+                }, 100 * index);
+            });
+        },
+        buildNav: function (val) {
+            //Check if property was fetched
+            if (this.getProperties.length > 0) {
+                //Disable nav to wait the menu to build
+                this.disabled = true;
+
+                //Clear menu
+                this.menu = [];
+
+                //Get selected property
+                let property = this.getProperties.find((element) => {
+                    if (element.url == val) {
+                        return element;
+                    }
+                });
+
+                //Push property home
+                this.menu.push({
+                    name: "Início",
+                    icon: "home",
+                    route: "",
+                    active: false,
+                });
+
+                //Push property infos
+                if (property.infos != undefined && property.infos != null) {
+                    this.menu.push({
+                        name: "Infos",
+                        icon: "images",
+                        route: "infos",
+                        active: false,
+                    });
+                }
+
+                //Push property lazer
+                if (property.lazer != undefined && property.lazer != null) {
+                    this.menu.push({
+                        name: "Área de Lazer",
+                        icon: "images",
+                        route: "lazer",
+                        active: false,
+                    });
+                }
+
+                //Push property comum
+                if (property.comum != undefined && property.comum != null) {
+                    this.menu.push({
+                        name: "Área Comum",
+                        icon: "images",
+                        route: "comum",
+                        active: false,
+                    });
+                }
+
+                //Push property decorado
+                if (
+                    property.decorado != undefined &&
+                    property.decorado != null
+                ) {
+                    this.menu.push({
+                        name: "Decorado",
+                        icon: "images",
+                        route: "decorado",
+                        active: false,
+                    });
+                }
+
+                //Push property plantas
+                if (property.plantas != undefined && property.plantas != null) {
+                    this.menu.push({
+                        name: "Plantas",
+                        icon: "ruler-combined",
+                        route: "plantas",
+                        active: false,
+                    });
+                }
+
+                //Push property videos
+                if (property.videos != undefined && property.videos != null) {
+                    this.menu.push({
+                        name: "Vídeos",
+                        icon: "play-circle",
+                        route: "video",
+                        active: false,
+                    });
+                }
+
+                //Push property model
+                if (property.model != undefined && property.model != null) {
+                    this.menu.push({
+                        name: "Modelo 3D",
+                        icon: "cubes",
+                        route: "modelo-3d",
+                        active: false,
+                    });
+                }
+
+                //Push property map
+                if (property.mapUrl != undefined && property.mapUrl != null) {
+                    this.menu.push({
+                        name: "Mapa",
+                        icon: "map-marker-alt",
+                        route: "mapa",
+                        active: false,
+                    });
+                }
+
+                //Push other properties
+                this.menu.push({
+                    name: "Outros empreendimentos",
+                    icon: "building",
+                    route: "",
+                    active: false,
+                });
+
+                //Enable nav to wait the menu to build
+                let _this = this;
+                setTimeout(function () {
+                    _this.disabled = false;
+                }, 500);
+            } else {
+                //Bring an empty menu
+                this.menu = [];
+            }
         },
     },
 };
@@ -167,7 +350,7 @@ export default {
         );
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d1d1d', endColorstr='#ffffff', GradientType=1 );
         opacity: 0;
-        transition: width 1s, opacity .5s;
+        transition: width 1s, opacity 0.5s;
 
         @media #{$mq-md} {
             height: calc(100vh - #{$navbarTopHeight});
